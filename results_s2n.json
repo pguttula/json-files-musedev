@@ -1,0 +1,1 @@
+{"requestedTools":null,"toolResults":[[{"tag":"Infer"},{"tag":"ToolFailure","contents":{"tag":"ToolInternalFailure","contents":{"tag":"SolverError","solverName":"infer","renderError":"Src branch: -----\nCall Stack: \n------Could not execute: user interrupt"}}}]]}

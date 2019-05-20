@@ -1,0 +1,2 @@
+{"requestedTools":null,"toolResults":[[{"tag":"Infer"},{"tag":"ToolSuccess","contents":[[],null]}],[{"tag":"ErrorProne"},{"tag":"ToolSuccess","contents":[[{"tnType":"EqualsHashCode","tnDesc":"Classes that override equals should also override hashCode.","tnFile":"src/main/java/com/twilio/http/Request.java","tnLine":259,"tnColumn":20,"tnPatch":null,"tnCodeLine":"    
+public boolean equals(Object o) {","tnProcedure":null,"tnPhase":"PhaseUnknown","tnTool":{"tag":"ErrorProne"}}],null]}]]}
