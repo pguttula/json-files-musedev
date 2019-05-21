@@ -1,0 +1,10 @@
+dasein-cloud-core https://github.com/smagill/dasein-cloud-core.git
+incubator-dubbo https://github.com/apache/incubator-dubbo.git
+flink https://github.com/apache/flink.git
+Telegram https://github.com/DrKLO/Telegram.git
+bigbluebutton https://github.com/bigbluebutton/bigbluebutton.git
+butterknife https://github.com/JakeWharton/butterknife.git
+EventBus https://github.com/greenrobot/EventBus
+lottie-android https://github.com/airbnb/lottie-android 
+
+
