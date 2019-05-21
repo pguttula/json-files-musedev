@@ -1,0 +1,1 @@
+{"requestedTools":null,"toolResults":[[{"tag":"CustomTool","contents":"ERR"},{"tag":"ToolFailure","contents":{"tag":"ToolSurfacableFailure","contents":"#####  External Process Failed  #####\ngit -C /tmp/analyzing-f94610ab3e092292 checkout master\n***STDOUT***\n\n***STDERR***\nerror: pathspec 'master' did not match any file(s) known to git.\n\n"}}]]}
