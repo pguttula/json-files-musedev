@@ -1,0 +1,1 @@
+{"requestedTools":null,"toolResults":[[{"tag":"CustomTool","contents":"ERR"},{"tag":"ToolFailure","contents":{"tag":"ToolSurfacableFailure","contents":"#####  External Process Failed  #####\ngit -C /tmp/analyzing-fc5cf853aa229579 reset --hard HEAD\n***STDOUT***\n\n***STDERR***\nfatal: Could not write new index file.\n\n"}}]]}

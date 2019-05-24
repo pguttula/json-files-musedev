@@ -6,5 +6,9 @@ bigbluebutton https://github.com/bigbluebutton/bigbluebutton.git
 butterknife https://github.com/JakeWharton/butterknife.git
 EventBus https://github.com/greenrobot/EventBus
 lottie-android https://github.com/airbnb/lottie-android 
+fastjson https://github.com/alibaba/fastjson.git
+webmagic https://github.com/code4craft/webmagic
+twilio https://github.com/twilio/twilio-java.git
+
 
 

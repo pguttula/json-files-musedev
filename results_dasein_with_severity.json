@@ -1,4 +1,3 @@
-dasein
 {
   "requestedTools": null,
   "toolResults": [
@@ -816,7 +815,7 @@ dasein
               "tnProcedure": "void APITrace.trace(CloudProvider,String)",
               "tnPhase": "PhaseUnknown",
               "severity":0.5,
-              "severity":
+              "severity":0.5,
               "tnTool": {
                 "tag": "Infer"
               }

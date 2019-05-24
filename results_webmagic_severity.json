@@ -20,6 +20,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "String IPUtils.getFirstNoLoopbackIPAddresses()",
               "tnPhase": "PhaseUnknown",
+              "severity":1,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -34,6 +35,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void AmanzonPageProcessor.process(Page)",
               "tnPhase": "PhaseUnknown",
+              "severity":0,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -48,6 +50,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void AmanzonPageProcessor.process(Page)",
               "tnPhase": "PhaseUnknown",
+              "severity":0,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -62,6 +65,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void LevelLimitScheduler.push(Request,Task)",
               "tnPhase": "PhaseUnknown",
+              "severity":0,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -76,6 +80,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void JokejiModel.main(java.lang.String[])",
               "tnPhase": "PhaseUnknown",
+              "severity":1,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -90,6 +95,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "OneFilePipeline.<init>(String)",
               "tnPhase": "PhaseUnknown",
+              "severity":0.5,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -104,6 +110,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void F58PageProcesser.main(java.lang.String[])",
               "tnPhase": "PhaseUnknown",
+              "severity":1,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -118,6 +125,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void JsonFilePipeline.process(ResultItems,Task)",
               "tnPhase": "PhaseUnknown",
+              "severity":0,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -132,6 +140,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void FilePipeline.process(ResultItems,Task)",
               "tnPhase": "PhaseUnknown",
+              "severity":1,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -146,6 +155,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void PhantomJSPageProcessor.main(java.lang.String[])",
               "tnPhase": "PhaseUnknown",
+              "severity":0,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -160,6 +170,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void FilePageModelPipeline.process(Object,Task)",
               "tnPhase": "PhaseUnknown",
+              "severity":0,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -174,6 +185,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void JsonFilePageModelPipeline.process(Object,Task)",
               "tnPhase": "PhaseUnknown",
+              "severity":0,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -188,6 +200,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void MamacnPageProcessor.main(java.lang.String[])",
               "tnPhase": "PhaseUnknown",
+              "severity":1,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -202,6 +215,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void MamacnPageProcessor.main(java.lang.String[])",
               "tnPhase": "PhaseUnknown",
+              "severity":1,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -216,6 +230,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void MamacnPageProcessor.main(java.lang.String[])",
               "tnPhase": "PhaseUnknown",
+              "severity":1,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -230,6 +245,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void GithubRepo.main(java.lang.String[])",
               "tnPhase": "PhaseUnknown",
+              "severity":0,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -244,6 +260,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "CloseableHttpClient HttpClientDownloader.getHttpClient(Site)",
               "tnPhase": "PhaseUnknown",
+              "severity":0.5,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -258,6 +275,7 @@ web magic
               "tnCodeLine": null,
               "tnProcedure": "void ZipCodePageProcessor.processDistrict(Page)",
               "tnPhase": "PhaseUnknown",
+              "severity":0,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -585,6 +603,7 @@ web magic
               "tnCodeLine": "        return put(key1, submap);",
               "tnProcedure": null,
               "tnPhase": "PhaseUnknown",
+              "severity":1,
               "tnTool": {
                 "tag": "ErrorProne"
               }
