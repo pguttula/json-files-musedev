@@ -20,7 +20,7 @@ aws
               "tnCodeLine": null,
               "tnProcedure": "byte[] BlockDecryptionHandler.decryptContent(byte[],int,int)",
               "tnPhase": "PhaseUnknown",
-              "severity":0.5,
+              "severity":0,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -50,7 +50,7 @@ aws
               "tnCodeLine": null,
               "tnProcedure": "SecretKey CryptoAlgorithm.getEncryptionKeyFromDataKey(SecretKey,CiphertextHeaders)",
               "tnPhase": "PhaseUnknown",
-              "severity":0.5,
+              "severity":0,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -65,8 +65,7 @@ aws
               "tnCodeLine": null,
               "tnProcedure": "CiphertextHeaders EncryptionHandler.signCiphertextHeaders(CiphertextHeaders)",
               "tnPhase": "PhaseUnknown",
-              "severity":,
-              "severity":0.5,
+              "severity":0,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -81,7 +80,7 @@ aws
               "tnCodeLine": null,
               "tnProcedure": "void DecryptionHandler.verifyHeaderIntegrity(CiphertextHeaders)",
               "tnPhase": "PhaseUnknown",
-              "severity":0.5  ,
+              "severity":0,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -124,7 +123,7 @@ aws
               "tnCodeLine": "        return Objects.hash(context, requestedAlgorithm, plaintextSize, plaintext);",
               "tnProcedure": null,
               "tnPhase": "PhaseUnknown",
-              "severity":0.5,
+              "severity":1,
               "tnTool": {
                 "tag": "ErrorProne"
               }
