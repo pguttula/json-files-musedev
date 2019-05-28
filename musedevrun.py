@@ -18,5 +18,7 @@ for line in project_info:
 	subprocess.call(["git","clone", gitlink])
 	#subprocess.call(["analyst","-t", projectname,"-C","master",">","/results/#results_mockito.json"])
 	print "Infer and Error Prone results to be written into results folder:" 
-	runcmd = "analyst -t /"+ projectname + " -C master > /results/results_"+ projectname+".json"
+	runcmd = "analyst -t /"+ projectname + " -C master > /results/results_"+ projectname+"_new.json"
 	os.system(runcmd)
+	runcmd_del = "rm -rf "+projectname
+	os.system(runcmd_del)

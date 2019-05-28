@@ -1,0 +1,616 @@
+{
+  "requestedTools": null,
+  "toolResults": [
+    [
+      {
+        "tag": "Infer"
+      },
+      {
+        "tag": "ToolSuccess",
+        "contents": [
+          [
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object `localAddress` last assigned on line 19 could be null and is dereferenced at line 33.",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/utils/IPUtils.java",
+              "tnLine": 33,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "String IPUtils.getFirstNoLoopbackIPAddresses()",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object `html.elements` last assigned on line 17 could be null and is dereferenced by call to `xpath(...)` at line 18.",
+              "tnFile": "webmagic-samples/src/main/java/us/codecraft/webmagic/samples/AmanzonPageProcessor.java",
+              "tnLine": 18,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void AmanzonPageProcessor.process(Page)",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object `tempHtml.elements` last assigned on line 26 could be null and is dereferenced by call to `xpath(...)` at line 27.",
+              "tnFile": "webmagic-samples/src/main/java/us/codecraft/webmagic/samples/AmanzonPageProcessor.java",
+              "tnLine": 27,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void AmanzonPageProcessor.process(Page)",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object returned by `request.getExtra(\"_level\")` could be null and is dereferenced at line 20.",
+              "tnFile": "webmagic-samples/src/main/java/us/codecraft/webmagic/samples/scheduler/LevelLimitScheduler.java",
+              "tnLine": 20,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void LevelLimitScheduler.push(Request,Task)",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `redis.clients.jedis.JedisPool` acquired by call to `RedisScheduler(...)` at line 27 is not released after line 28.\n**Note**: potential exception at line 28",
+              "tnFile": "webmagic-samples/src/main/java/us/codecraft/webmagic/model/samples/JokejiModel.java",
+              "tnLine": 28,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void JokejiModel.main(java.lang.String[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `java.io.FileOutputStream` acquired by call to `FileOutputStream(...)` at line 28 is not released after line 28.",
+              "tnFile": "webmagic-samples/src/main/java/us/codecraft/webmagic/samples/pipeline/OneFilePipeline.java",
+              "tnLine": 28,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "OneFilePipeline.<init>(String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `redis.clients.jedis.JedisPool` acquired by call to `RedisScheduler(...)` at line 32 is not released after line 32.\n**Note**: potential exception at line 32",
+              "tnFile": "webmagic-samples/src/main/java/us/codecraft/webmagic/samples/F58PageProcesser.java",
+              "tnLine": 32,
+              "tnColumn": -1,
+              "tnPatch": null,  
+              "tnCodeLine": null,
+              "tnProcedure": "void F58PageProcesser.main(java.lang.String[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `java.io.PrintWriter` acquired to `printWriter` by call to `new()` at line 40 is not released after line 43.\n**Note**: potential exception at line 41",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/pipeline/JsonFilePipeline.java",
+              "tnLine": 43,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void JsonFilePipeline.process(ResultItems,Task)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `java.io.FileOutputStream` acquired by call to `FileOutputStream(...)` at line 41 is not released after line 41.",
+              "tnFile": "webmagic-core/src/main/java/us/codecraft/webmagic/pipeline/FilePipeline.java",
+              "tnLine": 41,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void FilePipeline.process(ResultItems,Task)",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object returned by `resultItemsList.get(0).get(\"html\")` could be null and is dereferenced at line 51.",
+              "tnFile": "webmagic-samples/src/main/java/us/codecraft/webmagic/samples/PhantomJSPageProcessor.java",
+              "tnLine": 51,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void PhantomJSPageProcessor.main(java.lang.String[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":0,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `java.io.PrintWriter` acquired to `printWriter` by call to `new()` at line 48 is not released after line 51.\n**Note**: potential exception at line 49",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/pipeline/FilePageModelPipeline.java",
+              "tnLine": 51,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void FilePageModelPipeline.process(Object,Task)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `java.io.PrintWriter` acquired to `printWriter` by call to `new()` at line 49 is not released after line 52.\n**Note**: potential exception at line 50",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/pipeline/JsonFilePageModelPipeline.java",
+              "tnLine": 52,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void JsonFilePageModelPipeline.process(Object,Task)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `java.io.PrintWriter` acquired by call to `OneFilePipeline(...)` at line 45 is not released after line 46.",
+              "tnFile": "webmagic-samples/src/main/java/us/codecraft/webmagic/samples/MamacnPageProcessor.java",
+              "tnLine": 46,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void MamacnPageProcessor.main(java.lang.String[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `us.codecraft.webmagic.scheduler.FileCacheQueueScheduler` acquired by call to `FileCacheQueueScheduler(...)` at line 43 is not released after line 44.\n**Note**: potential exception at line 44",
+              "tnFile": "webmagic-samples/src/main/java/us/codecraft/webmagic/samples/MamacnPageProcessor.java",
+              "tnLine": 44,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void MamacnPageProcessor.main(java.lang.String[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `us.codecraft.webmagic.scheduler.FileCacheQueueScheduler` acquired by call to `FileCacheQueueScheduler(...)` at line 43 is not released after line 45.",
+              "tnFile": "webmagic-samples/src/main/java/us/codecraft/webmagic/samples/MamacnPageProcessor.java",
+              "tnLine": 45,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void MamacnPageProcessor.main(java.lang.String[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `us.codecraft.webmagic.scheduler.FileCacheQueueScheduler` acquired by call to `FileCacheQueueScheduler(...)` at line 46 is not released after line 47.\n**Note**: potential exception at line 47",
+              "tnFile": "webmagic-samples/src/main/java/us/codecraft/webmagic/model/samples/GithubRepo.java",
+              "tnLine": 47,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void GithubRepo.main(java.lang.String[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":0,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object `null` could be null and is dereferenced by call to `getClient(...)` at line 56.",
+              "tnFile": "webmagic-core/src/main/java/us/codecraft/webmagic/downloader/HttpClientDownloader.java",
+              "tnLine": 56,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "CloseableHttpClient HttpClientDownloader.getHttpClient(Site)",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object returned by `page.getRequest().getExtra(\"province\")` could be null and is dereferenced at line 63.",
+              "tnFile": "webmagic-samples/src/main/java/us/codecraft/webmagic/samples/scheduler/ZipCodePageProcessor.java",
+              "tnLine": 63,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void ZipCodePageProcessor.processDistrict(Page)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `java.io.FileReader` acquired by call to `new()` at line 71 is not released after line 71.",
+              "tnFile": "webmagic-selenium/src/main/java/us/codecraft/webmagic/downloader/selenium/WebDriverPool.java",
+              "tnLine": 71,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void WebDriverPool.configure()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `redis.clients.jedis.JedisPool` acquired by call to `RedisScheduler(...)` at line 75 is not released after line 76.\n**Note**: potential exception at line 76",
+              "tnFile": "webmagic-samples/src/main/java/us/codecraft/webmagic/model/samples/News163.java",
+              "tnLine": 76,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void News163.main(java.lang.String[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1  ,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object `content` last assigned on line 93 could be null and is dereferenced at line 94.",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/downloader/PhantomJSDownloader.java",
+              "tnLine": 94,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "Page PhantomJSDownloader.download(Request,Task)",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `java.io.InputStreamReader` acquired by call to `new()` at line 128 is not released after line 135.\n**Note**: potential exception at line 131",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/downloader/PhantomJSDownloader.java",
+              "tnLine": 135,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "String PhantomJSDownloader.getPage(Request)",
+              "severity":1,
+              "tnPhase": "PhaseUnknown",
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `java.lang.Process` acquired to `process` by call to `exec(...)` at line 126 is not released after line 127.",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/downloader/PhantomJSDownloader.java",
+              "tnLine": 127,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "String PhantomJSDownloader.getPage(Request)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `java.io.FileReader` acquired by call to `new()` at line 138 is not released after line 149.\n**Note**: potential exception at line 140",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/scheduler/FileCacheQueueScheduler.java",
+              "tnLine": 149,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void FileCacheQueueScheduler.readUrlFile()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `java.io.FileReader` acquired by call to `new()` at line 157 is not released after line 165.\n**Note**: potential exception at line 160",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/scheduler/FileCacheQueueScheduler.java",
+              "tnLine": 165,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void FileCacheQueueScheduler.readCursorFile()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void FileCacheQueueScheduler.close()` reads without synchronization from `this.us.codecraft.webmagic.scheduler.FileCacheQueueScheduler.fileUrlWriter`. Potentially races with write in method `FileCacheQueueScheduler.poll(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/scheduler/FileCacheQueueScheduler.java",
+              "tnLine": 172,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void FileCacheQueueScheduler.close()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void FileCacheQueueScheduler.close()` reads without synchronization from `this.us.codecraft.webmagic.scheduler.FileCacheQueueScheduler.fileCursorWriter`. Potentially races with write in method `FileCacheQueueScheduler.poll(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/scheduler/FileCacheQueueScheduler.java",
+              "tnLine": 173,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void FileCacheQueueScheduler.close()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void FileCacheQueueScheduler.close()` reads without synchronization from `this.us.codecraft.webmagic.scheduler.FileCacheQueueScheduler.flushThreadPool`. Potentially races with write in method `FileCacheQueueScheduler.poll(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/scheduler/FileCacheQueueScheduler.java",
+              "tnLine": 171,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void FileCacheQueueScheduler.close()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void WebDriverPool.configure()` writes to field `selenium.WebDriverPool.us.codecraft.webmagic.downloader.selenium.WebDriverPool.sCaps` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "webmagic-selenium/src/main/java/us/codecraft/webmagic/downloader/selenium/WebDriverPool.java",
+              "tnLine": 74,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void WebDriverPool.configure()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void WebDriverPool.configure()` writes to field `this.us.codecraft.webmagic.downloader.selenium.WebDriverPool.mDriver` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "webmagic-selenium/src/main/java/us/codecraft/webmagic/downloader/selenium/WebDriverPool.java",
+              "tnLine": 138,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void WebDriverPool.configure()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void WebDriverPool.configure()` reads without synchronization from `selenium.WebDriverPool.us.codecraft.webmagic.downloader.selenium.WebDriverPool.sCaps`. Potentially races with write in method `WebDriverPool.get()`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "webmagic-selenium/src/main/java/us/codecraft/webmagic/downloader/selenium/WebDriverPool.java",
+              "tnLine": 140,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void WebDriverPool.configure()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void WebDriverPool.configure()` writes to field `selenium.WebDriverPool.us.codecraft.webmagic.downloader.selenium.WebDriverPool.sConfig` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "webmagic-selenium/src/main/java/us/codecraft/webmagic/downloader/selenium/WebDriverPool.java",
+              "tnLine": 66,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void WebDriverPool.configure()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void WebDriverPool.configure()` reads without synchronization from `selenium.WebDriverPool.us.codecraft.webmagic.downloader.selenium.WebDriverPool.sConfig`. Potentially races with write in method `WebDriverPool.get()`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "webmagic-selenium/src/main/java/us/codecraft/webmagic/downloader/selenium/WebDriverPool.java",
+              "tnLine": 126,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void WebDriverPool.configure()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void CountableThreadPool.execute(Runnable)` reads without synchronization from `this.us.codecraft.webmagic.thread.CountableThreadPool.executorService`. Potentially races with write in method `CountableThreadPool.setExecutorService(...)`.\n Reporting because this access may occur on a background thread.",
+              "tnFile": "webmagic-core/src/main/java/us/codecraft/webmagic/thread/CountableThreadPool.java",
+              "tnLine": 70,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void CountableThreadPool.execute(Runnable)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `int FileCacheQueueScheduler.getLeftRequestsCount(Task)` reads without synchronization from `this.us.codecraft.webmagic.scheduler.FileCacheQueueScheduler.queue`. Potentially races with write in method `FileCacheQueueScheduler.poll(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/scheduler/FileCacheQueueScheduler.java",
+              "tnLine": 200,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "int FileCacheQueueScheduler.getLeftRequestsCount(Task)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void FileCacheQueueScheduler.pushWhenNoDuplicate(Request,Task)` indirectly writes to field `this.us.codecraft.webmagic.scheduler.FileCacheQueueScheduler.fileCursorWriter` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/scheduler/FileCacheQueueScheduler.java",
+              "tnLine": 183,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void FileCacheQueueScheduler.pushWhenNoDuplicate(Request,Task)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void FileCacheQueueScheduler.pushWhenNoDuplicate(Request,Task)` reads without synchronization from `this.us.codecraft.webmagic.scheduler.FileCacheQueueScheduler.queue`. Potentially races with write in method `FileCacheQueueScheduler.poll(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/scheduler/FileCacheQueueScheduler.java",
+              "tnLine": 185,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void FileCacheQueueScheduler.pushWhenNoDuplicate(Request,Task)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void FileCacheQueueScheduler.pushWhenNoDuplicate(Request,Task)` reads without synchronization from `this.us.codecraft.webmagic.scheduler.FileCacheQueueScheduler.fileUrlWriter`. Potentially races with write in method `FileCacheQueueScheduler.poll(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/scheduler/FileCacheQueueScheduler.java",
+              "tnLine": 186,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void FileCacheQueueScheduler.pushWhenNoDuplicate(Request,Task)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            }
+          ],
+          null
+        ]
+      }
+    ],
+    [
+      {
+        "tag": "ErrorProne"
+      },
+      {
+        "tag": "ToolSuccess",
+        "contents": [
+          [
+            {
+              "tnType": "InfiniteRecursion",
+              "tnDesc": "This method always recurses, and will cause a StackOverflowError",
+              "tnFile": "webmagic-extension/src/main/java/us/codecraft/webmagic/utils/DoubleKeyMap.java",
+              "tnLine": 70,
+              "tnColumn": 9,
+              "tnPatch": null,
+              "tnCodeLine": "        return put(key1, submap);",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            }
+          ],
+          null
+        ]
+      }
+    ]
+  ]
+}

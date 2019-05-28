@@ -1,0 +1,1262 @@
+{
+  "requestedTools": null,
+  "toolResults": [
+    [
+      {
+        "tag": "Infer"
+      },
+      {
+        "tag": "ToolSuccess",
+        "contents": [
+          [
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object `stringToWrite` last assigned on line 38  at line 39.",
+              "tnFile": "src/main/java/org/dasein/cloud/util/requester/entities/DaseinEntity.java",
+              "tnLine": 39,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "DaseinEntity.<init>(Object,StreamProcessor)",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object returned by `currentTags.get(tagToCheck)` could be null and is dereferenced at line 68.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/AutoScalingGroupFilterOptions.java",
+              "tnLine": 68,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "boolean AutoScalingGroupFilterOptions.matches(ScalingGroup)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "RESOURCE_LEAK",
+              "tnDesc": "resource of type `org.bouncycastle.util.io.pem.PemReader` acquired to `pemReader` by call to `new()` at line 97 is not released after line 104.",
+              "tnFile": "src/main/java/org/dasein/cloud/util/X509Store.java",
+              "tnLine": 104,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "Object X509Store.readPemObject(String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object returned by `getFirewall(id)` could be null and is dereferenced at line 220.",
+              "tnFile": "src/main/java/org/dasein/cloud/network/AbstractNetworkFirewallSupport.java",
+              "tnLine": 220,
+              "tnColumn": -1, 
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void AbstractNetworkFirewallSupport.setTags(java.lang.String[],org.dasein.cloud.Tag[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object returned by `getSnapshot(id)` could be null and is dereferenced at line 290.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/AbstractSnapshotSupport.java",
+              "tnLine": 290,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void AbstractSnapshotSupport.setTags(java.lang.String[],org.dasein.cloud.Tag[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object returned by `getVolume(id)` could be null and is dereferenced at line 301.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/AbstractVolumeSupport.java",
+              "tnLine": 301,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void AbstractVolumeSupport.setTags(java.lang.String[],org.dasein.cloud.Tag[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object returned by `getLoadBalancer(id)` could be null and is dereferenced at line 307.",
+              "tnFile": "src/main/java/org/dasein/cloud/network/AbstractLoadBalancerSupport.java",
+              "tnLine": 307,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void AbstractLoadBalancerSupport.setTags(java.lang.String[],org.dasein.cloud.Tag[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object returned by `getFirewall(id)` could be null and is dereferenced at line 402.",
+              "tnFile": "src/main/java/org/dasein/cloud/network/AbstractFirewallSupport.java",
+              "tnLine": 402,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void AbstractFirewallSupport.setTags(java.lang.String[],org.dasein.cloud.Tag[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object returned by `getSubnet(id)` could be null and is dereferenced at line 443.",
+              "tnFile": "src/main/java/org/dasein/cloud/network/AbstractVLANSupport.java",
+              "tnLine": 443,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void AbstractVLANSupport.setSubnetTags(java.lang.String[],org.dasein.cloud.Tag[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object returned by `getRoutingTable(id)` could be null and is dereferenced at line 456.",
+              "tnFile": "src/main/java/org/dasein/cloud/network/AbstractVLANSupport.java",
+              "tnLine": 456,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void AbstractVLANSupport.setRoutingTableTags(java.lang.String[],org.dasein.cloud.Tag[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object returned by `getVlan(id)` could be null and is dereferenced at line 483.",
+              "tnFile": "src/main/java/org/dasein/cloud/network/AbstractVLANSupport.java",
+              "tnLine": 483,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void AbstractVLANSupport.setVLANTags(java.lang.String[],org.dasein.cloud.Tag[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object returned by `getVirtualMachine(id)` could be null and is dereferenced at line 750.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/AbstractVMSupport.java",
+              "tnLine": 750,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void AbstractVMSupport.setTags(java.lang.String[],org.dasein.cloud.Tag[])",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void APITrace.begin(CloudProvider,String)` reads without synchronization from `current.org.dasein.cloud.util.APITrace$CloudOperation.currentChild`. Potentially races with write in method `APITrace.begin(...)`.\n Reporting because this access may occur on a background thread. [wob].",
+              "tnFile": "src/main/java/org/dasein/cloud/util/APITrace.java",
+              "tnLine": 107,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void APITrace.begin(CloudProvider,String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void APITrace.begin(CloudProvider,String)` writes to field `current.org.dasein.cloud.util.APITrace$CloudOperation.currentChild` outside of synchronization.\n Reporting because this access may occur on a background thread. [wob].",
+              "tnFile": "src/main/java/org/dasein/cloud/util/APITrace.java",
+              "tnLine": 109,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void APITrace.begin(CloudProvider,String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void CloudProvider.close()` indirectly writes to field `this.org.dasein.cloud.CloudProvider.context` outside of synchronization.\n Reporting because this access may occur on a background thread.",
+              "tnFile": "src/main/java/org/dasein/cloud/CloudProvider.java",
+              "tnLine": 157,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void CloudProvider.close()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void CloudProvider.connect(ProviderContext)` indirectly writes to field `this.org.dasein.cloud.CloudProvider.context` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/CloudProvider.java",
+              "tnLine": 171,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void CloudProvider.connect(ProviderContext)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void CloudProvider.connect(ProviderContext,CloudProvider)` indirectly writes to field `this.org.dasein.cloud.CloudProvider.context` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/CloudProvider.java",
+              "tnLine": 185,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void CloudProvider.connect(ProviderContext,CloudProvider)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void CloudProvider.connect(ProviderContext,CloudProvider,Cloud)` writes to field `this.org.dasein.cloud.CloudProvider.context` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/CloudProvider.java",
+              "tnLine": 210,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void CloudProvider.connect(ProviderContext,CloudProvider,Cloud)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void CloudProvider.connect(ProviderContext,CloudProvider,Cloud)` indirectly reads without synchronization from `this.org.dasein.cloud.CloudProvider.context`. Potentially races with write in method `CloudProvider.close()`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/CloudProvider.java",
+              "tnLine": 209,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void CloudProvider.connect(ProviderContext,CloudProvider,Cloud)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `String VirtualMachine.fetchPassword()` reads without synchronization from `this.org.dasein.cloud.compute.VirtualMachine.rootPassword`. Potentially races with write in method `VirtualMachine.setRootPassword(...)`.\n Reporting because this access may occur on a background thread.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/VirtualMachine.java",
+              "tnLine": 195,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "String VirtualMachine.fetchPassword()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `Iterable Cache.get(ProviderContext)` writes to field `entry.org.dasein.cloud.util.Cache$CacheEntry.items` outside of synchronization.\n Reporting because this access may occur on a background thread. [wob].",
+              "tnFile": "src/main/java/org/dasein/cloud/util/Cache.java",
+              "tnLine": 310,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "Iterable Cache.get(ProviderContext)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `Iterable Cache.get(ProviderContext)` reads without synchronization from `entry.org.dasein.cloud.util.Cache$CacheEntry.items`. Potentially races with write in method `Cache.get(...)`.\n Reporting because this access may occur on a background thread. [wob].",
+              "tnFile": "src/main/java/org/dasein/cloud/util/Cache.java",
+              "tnLine": 313,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "Iterable Cache.get(ProviderContext)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `Object SingletonCache.get(ProviderContext)` writes to field `entry.org.dasein.cloud.util.SingletonCache$CacheEntry.item` outside of synchronization.\n Reporting because this access may occur on a background thread. [wob].",
+              "tnFile": "src/main/java/org/dasein/cloud/util/SingletonCache.java",
+              "tnLine": 303,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "Object SingletonCache.get(ProviderContext)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `Object SingletonCache.get(ProviderContext)` reads without synchronization from `entry.org.dasein.cloud.util.SingletonCache$CacheEntry.item`. Potentially races with write in method `SingletonCache.get(...)`.\n Reporting because this access may occur on a background thread. [wob].",
+              "tnFile": "src/main/java/org/dasein/cloud/util/SingletonCache.java",
+              "tnLine": 306,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "Object SingletonCache.get(ProviderContext)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `ProviderContext CloudProvider.getContext()` reads without synchronization from `this.org.dasein.cloud.CloudProvider.context`. Potentially races with write in method `CloudProvider.close()`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/CloudProvider.java",
+              "tnLine": 278,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "ProviderContext CloudProvider.getContext()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `Object AsynchronousTask.getResult()` reads without synchronization from `this.org.dasein.cloud.AsynchronousTask.result`. Potentially races with write in method `AsynchronousTask.completeWithResult(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/AsynchronousTask.java",
+              "tnLine": 76,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "Object AsynchronousTask.getResult()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `String VirtualMachine.getRootPassword()` indirectly reads without synchronization from `this.org.dasein.cloud.compute.VirtualMachine.rootPassword`. Potentially races with write in method `VirtualMachine.setRootPassword(...)`.\n Reporting because this access may occur on a background thread.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/VirtualMachine.java",
+              "tnLine": 148,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "String VirtualMachine.getRootPassword()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `String VirtualMachine.getRootPassword(long)` indirectly reads without synchronization from `this.org.dasein.cloud.compute.VirtualMachine.rootPassword`. Potentially races with write in method `VirtualMachine.setRootPassword(...)`.\n Reporting because this access may occur on a background thread.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/VirtualMachine.java",
+              "tnLine": 170,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "String VirtualMachine.getRootPassword(long)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `StorageServices CloudProvider.getStorageServices()` indirectly reads with synchronization from `this.org.dasein.cloud.CloudProvider.context`. Potentially races with unsynchronized write in method `CloudProvider.close()`.\n Reporting because this access may occur on a background thread.",
+              "tnFile": "src/main/java/org/dasein/cloud/CloudProvider.java",
+              "tnLine": 326,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "StorageServices CloudProvider.getStorageServices()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `StorageServices CloudProvider.getStorageServices()` reads with synchronization from `this.org.dasein.cloud.CloudProvider.storageCloudProvider`. Potentially races with unsynchronized write in method `CloudProvider.close()`.\n Reporting because this access may occur on a background thread.",
+              "tnFile": "src/main/java/org/dasein/cloud/CloudProvider.java",
+              "tnLine": 324,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "StorageServices CloudProvider.getStorageServices()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `String Volume.getTag(String)` indirectly writes to field `this.org.dasein.cloud.compute.Volume.tags` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/Volume.java",
+              "tnLine": 323,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "String Volume.getTag(String)",
+              "tnPhase": "PhaseUnknown",
+              "Severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `Map Volume.getTags()` reads without synchronization from `this.org.dasein.cloud.compute.Volume.tags`. Potentially races with write in method `Volume.setTags(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/Volume.java",
+              "tnLine": 331,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "Map Volume.getTags()",
+              "tnPhase": "PhaseUnknown",
+              "Severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `Map Volume.getTags()` writes to field `this.org.dasein.cloud.compute.Volume.tags` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/Volume.java",
+              "tnLine": 329,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "Map Volume.getTags()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `Throwable AsynchronousTask.getTaskError()` reads without synchronization from `this.org.dasein.cloud.AsynchronousTask.taskError`. Potentially races with write in method `AsynchronousTask.complete(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/AsynchronousTask.java",
+              "tnLine": 88,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "Throwable AsynchronousTask.getTaskError()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `boolean CloudProvider.hasStorageServices()` indirectly reads with synchronization from `this.org.dasein.cloud.CloudProvider.context`. Potentially races with unsynchronized write in method `CloudProvider.close()`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/CloudProvider.java",
+              "tnLine": 385,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "boolean CloudProvider.hasStorageServices()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void CloudProvider.hold()` reads without synchronization from `this.org.dasein.cloud.CloudProvider.computeCloudProvider`. Potentially races with write in method `CloudProvider.connect(...)`.\n Reporting because this access may occur on a background thread.",
+              "tnFile": "src/main/java/org/dasein/cloud/CloudProvider.java",
+              "tnLine": 390,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void CloudProvider.hold()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `boolean CloudProvider.isConnected()` reads with synchronization from `this.org.dasein.cloud.CloudProvider.context`. Potentially races with unsynchronized write in method `CloudProvider.close()`.\n Reporting because this access may occur on a background thread.",
+              "tnFile": "src/main/java/org/dasein/cloud/CloudProvider.java",
+              "tnLine": 400,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "boolean CloudProvider.isConnected()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void CloudProvider.release()` reads without synchronization from `this.org.dasein.cloud.CloudProvider.computeCloudProvider`. Potentially races with write in method `CloudProvider.connect(...)`.\n Reporting because this access may occur on a background thread.",
+              "tnFile": "src/main/java/org/dasein/cloud/CloudProvider.java",
+              "tnLine": 405,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void CloudProvider.release()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void InvoiceLine.setBreakout(String,Double)` reads without synchronization from `this.org.dasein.cloud.admin.InvoiceLine.breakouts`. Potentially races with write in method `InvoiceLine.setTags(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/admin/InvoiceLine.java",
+              "tnLine": 109,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void InvoiceLine.setBreakout(String,Double)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void InvoiceLine.setBreakout(String,Double)` writes to field `this.org.dasein.cloud.admin.InvoiceLine.breakouts` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/admin/InvoiceLine.java",
+              "tnLine": 107,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void InvoiceLine.setBreakout(String,Double)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void VirtualMachine.setRootPassword(String)` writes to field `this.org.dasein.cloud.compute.VirtualMachine.rootPassword` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/VirtualMachine.java",
+              "tnLine": 135,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void VirtualMachine.setRootPassword(String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void Account.setTag(String,String)` reads without synchronization from `this.org.dasein.cloud.admin.Account.tags`. Potentially races with write in method `Account.setTags(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/admin/Account.java",
+              "tnLine": 190,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void Account.setTag(String,String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void Account.setTag(String,String)` writes to field `this.org.dasein.cloud.admin.Account.tags` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/admin/Account.java",
+              "tnLine": 188,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void Account.setTag(String,String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void InvoiceHeader.setTag(String,String)` writes to field `this.org.dasein.cloud.admin.InvoiceHeader.tags` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/admin/InvoiceHeader.java",
+              "tnLine": 67,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void InvoiceHeader.setTag(String,String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void InvoiceHeader.setTag(String,String)` reads without synchronization from `this.org.dasein.cloud.admin.InvoiceHeader.tags`. Potentially races with write in method `InvoiceHeader.setTags(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/admin/InvoiceHeader.java",
+              "tnLine": 69,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void InvoiceHeader.setTag(String,String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void AffinityGroup.setTag(String,String)` reads without synchronization from `this.org.dasein.cloud.compute.AffinityGroup.tags`. Potentially races with write in method `AffinityGroup.setTags(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/AffinityGroup.java",
+              "tnLine": 98,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void AffinityGroup.setTag(String,String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void AffinityGroup.setTag(String,String)` writes to field `this.org.dasein.cloud.compute.AffinityGroup.tags` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/AffinityGroup.java",
+              "tnLine": 96,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void AffinityGroup.setTag(String,String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void VirtualMachine.setTag(String,String)` writes to field `this.org.dasein.cloud.compute.VirtualMachine.tags` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/VirtualMachine.java",
+              "tnLine": 560,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void VirtualMachine.setTag(String,String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void VirtualMachine.setTag(String,String)` reads without synchronization from `this.org.dasein.cloud.compute.VirtualMachine.tags`. Potentially races with write in method `VirtualMachine.setTags(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/VirtualMachine.java",
+              "tnLine": 562,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void VirtualMachine.setTag(String,String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void Volume.setTag(String,String)` indirectly writes to field `this.org.dasein.cloud.compute.Volume.tags` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/Volume.java",
+              "tnLine": 336,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void Volume.setTag(String,String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void Cache$CacheDelegate.setTimeoutInSeconds(String,long)` writes to field `c.org.dasein.cloud.util.Cache.cacheTimeout` outside of synchronization.\n Reporting because this access may occur on a background thread. [wob].",
+              "tnFile": "src/main/java/org/dasein/cloud/util/Cache.java",
+              "tnLine": 167,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void Cache$CacheDelegate.setTimeoutInSeconds(String,long)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void SingletonCache$CacheDelegate.setTimeoutInSeconds(String,long)` writes to field `c.org.dasein.cloud.util.SingletonCache.cacheTimeout` outside of synchronization.\n Reporting because this access may occur on a background thread. [wob].",
+              "tnFile": "src/main/java/org/dasein/cloud/util/SingletonCache.java",
+              "tnLine": 162,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void SingletonCache$CacheDelegate.setTimeoutInSeconds(String,long)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void APITrace.trace(CloudProvider,String)` writes to field `current.org.dasein.cloud.util.APITrace$CloudOperation.apiCalls` outside of synchronization.\n Reporting because this access may occur on a background thread. [wob].",
+              "tnFile": "src/main/java/org/dasein/cloud/util/APITrace.java",
+              "tnLine": 622,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void APITrace.trace(CloudProvider,String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Unprotected write. Non-private method `void APITrace.trace(CloudProvider,String)` writes to field `current.org.dasein.cloud.util.APITrace$CloudOperation.calls` outside of synchronization.\n Reporting because this access may occur on a background thread. [wob].",
+              "tnFile": "src/main/java/org/dasein/cloud/util/APITrace.java",
+              "tnLine": 608,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void APITrace.trace(CloudProvider,String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `void APITrace.trace(CloudProvider,String)` reads without synchronization from `current.org.dasein.cloud.util.APITrace$CloudOperation.apiCalls`. Potentially races with write in method `APITrace.trace(...)`.\n Reporting because this access may occur on a background thread. [wob].",
+              "tnFile": "src/main/java/org/dasein/cloud/util/APITrace.java",
+              "tnLine": 624,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void APITrace.trace(CloudProvider,String)",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            }
+          ],
+          null
+        ]
+      }
+    ],
+    [
+      {
+        "tag": "ErrorProne"
+      },
+      {
+        "tag": "ToolSuccess",
+        "contents": [
+          [
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/Snapshot.java",
+              "tnLine": 47,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals( Object ob ) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/dc/Region.java",
+              "tnLine": 61,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(Object ob) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/network/Firewall.java",
+              "tnLine": 59,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(Object other) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/VolumeProduct.java",
+              "tnLine": 171,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(Object other) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/platform/Distribution.java",
+              "tnLine": 51,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(@CheckForNull Object ob) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/platform/Database.java",
+              "tnLine": 60,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(Object ob) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/network/Subnet.java",
+              "tnLine": 81,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(Object ob) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/identity/CloudGroup.java",
+              "tnLine": 42,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(@Nullable Object ob) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/storage/Blob.java",
+              "tnLine": 90,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(@Nullable Object other) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/Volume.java",
+              "tnLine": 71,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals( Object ob ) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/platform/bigdata/DataClusterParameterGroup.java",
+              "tnLine": 64,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(@Nullable Object other) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsWrongThing",
+              "tnDesc": "Suspicious comparison between `providerTopologyId` and `providerRegionId`",
+              "tnFile": "src/main/java/org/dasein/cloud/ci/Topology.java",
+              "tnLine": 228,
+              "tnColumn": 136,
+              "tnPatch": null,
+              "tnCodeLine": "        return (t.providerOwnerId.equals(providerOwnerId) && t.providerRegionId.equals(providerRegionId) && t.providerTopologyId.equals(providerRegionId));",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "SelfEquals",
+              "tnDesc": "Testing an object for equality with itself will always be true.",
+              "tnFile": "src/main/java/org/dasein/cloud/platform/bigdata/DataCluster.java",
+                "tnLine": 204,
+                "tnColumn": 366,
+              "tnPatch": null,
+              "tnCodeLine": "        return providerOwnerId.equals(c.providerOwnerId) && providerRegionId.equals(c.providerRegionId) && !((providerDataCenterId == null && c.providerDataCenterId != null) || (providerDataCenterId != null && c.providerDataCenterId != null)) && !(providerDataCenterId != null && !providerDataCenterId.equals(c.providerDataCenterId)) && providerDataClusterId.equals(providerDataClusterId);",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/dc/DataCenter.java",
+              "tnLine": 70,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(Object ob) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/VirtualMachine.java",
+              "tnLine": 102,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals( Object ob ) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/platform/DatabaseBackup.java",
+              "tnLine": 43,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(Object ob) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/network/RoutingTable.java",
+              "tnLine": 51,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(@Nullable Object other) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/platform/bigdata/DataClusterVersion.java",
+              "tnLine": 59,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(@Nullable Object other) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/network/IpAddress.java",
+              "tnLine": 74,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(@CheckForNull Object ob) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/network/FirewallRule.java",
+              "tnLine": 427,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(Object other) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/identity/SSHKeypair.java",
+              "tnLine": 47,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(@Nullable Object ob) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/identity/CloudUser.java",
+              "tnLine": 44,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(@Nullable Object ob) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/network/NetworkInterface.java",
+              "tnLine": 53,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(Object other) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/platform/DatabaseSnapshot.java",
+              "tnLine": 38,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(Object ob) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/identity/AccessKey.java",
+              "tnLine": 51,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(@Nullable Object ob) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/admin/Account.java",
+              "tnLine": 60,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(Object ob) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            },
+            {
+              "tnType": "EqualsHashCode",
+              "tnDesc": "Classes that override equals should also override hashCode.",
+              "tnFile": "src/main/java/org/dasein/cloud/compute/VirtualMachineProduct.java",
+              "tnLine": 63,
+              "tnColumn": 20,
+              "tnPatch": null,
+              "tnCodeLine": "    public boolean equals(Object ob) {",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            }
+          ],
+          null
+        ]
+      }
+    ]
+  ]
+}

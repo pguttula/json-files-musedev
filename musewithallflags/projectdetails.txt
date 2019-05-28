@@ -1,0 +1,4 @@
+dasein-cloud-core https://github.com/smagill/dasein-cloud-core.git
+fastjson https://github.com/alibaba/fastjson.git 
+
+

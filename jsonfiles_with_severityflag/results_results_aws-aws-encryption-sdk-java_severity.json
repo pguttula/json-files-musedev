@@ -1,0 +1,137 @@
+aws
+{
+  "requestedTools": null,
+  "toolResults": [
+    [
+      {
+        "tag": "Infer"
+      },
+      {
+        "tag": "ToolSuccess",
+        "contents": [
+          [
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object `nonce` last assigned on line 225 could be null and is dereferenced by call to `cipherData(...)` at line 235.",
+              "tnFile": "src/main/java/com/amazonaws/encryptionsdk/internal/BlockDecryptionHandler.java",
+              "tnLine": 235,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "byte[] BlockDecryptionHandler.decryptContent(byte[],int,int)",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object `nonce` last assigned on line 251 could be null and is dereferenced by call to `cipherData(...)` at line 268.",
+              "tnFile": "src/main/java/com/amazonaws/encryptionsdk/internal/FrameDecryptionHandler.java",
+              "tnLine": 268,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "byte[] FrameDecryptionHandler.decryptContent(byte[],int,int)",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object `messageId` last assigned on line 295 could be null and is dereferenced at line 296.",
+              "tnFile": "src/main/java/com/amazonaws/encryptionsdk/CryptoAlgorithm.java",
+              "tnLine": 296,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "SecretKey CryptoAlgorithm.getEncryptionKeyFromDataKey(SecretKey,CiphertextHeaders)",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object returned by `unsignedHeaders.getHeaderNonce()` could be null and is dereferenced by call to `computeHeaderTag(...)` at line 401.",
+              "tnFile": "src/main/java/com/amazonaws/encryptionsdk/internal/EncryptionHandler.java",
+              "tnLine": 401,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "CiphertextHeaders EncryptionHandler.signCiphertextHeaders(CiphertextHeaders)",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "NULL_DEREFERENCE",
+              "tnDesc": "object `headerTag` last assigned on line 416 could be null and is dereferenced at line 417.",
+              "tnFile": "src/main/java/com/amazonaws/encryptionsdk/internal/DecryptionHandler.java",
+              "tnLine": 417,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "void DecryptionHandler.verifyHeaderIntegrity(CiphertextHeaders)",
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            },
+            {
+              "tnType": "THREAD_SAFETY_VIOLATION",
+              "tnDesc": "Read/Write race. Non-private method `boolean BlockDecryptionHandler.isComplete()` reads without synchronization fromthis.com.amazonaws.encryptionsdk.internal.BlockDecryptionHandler.complete_`. Potentially races with write in method `BlockDecryptionHandler.processBytes(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+              "tnFile": "src/main/java/com/amazonaws/encryptionsdk/internal/BlockDecryptionHandler.java",
+              "tnLine": 240,
+              "tnColumn": -1,
+              "tnPatch": null,
+              "tnCodeLine": null,
+              "tnProcedure": "boolean BlockDecryptionHandler.isComplete()",
+              "tnPhase": "PhaseUnknown",
+              "severity":0.5,
+              "tnTool": {
+                "tag": "Infer"
+              }
+            }
+          ],
+          null
+        ]
+      }
+    ],
+    [
+      {
+        "tag": "ErrorProne"
+      },
+      {
+        "tag": "ToolSuccess",
+        "contents": [
+          [
+            {
+              "tnType": "ArrayHashCode",
+              "tnDesc": "hashcode method on array does not hash array contents",
+              "tnFile": "src/main/java/com/amazonaws/encryptionsdk/model/EncryptionMaterialsRequest.java",
+              "tnLine": 83,
+              "tnColumn": 28,
+              "tnPatch": null,
+              "tnCodeLine": "        return Objects.hash(context, requestedAlgorithm, plaintextSize, plaintext);",
+              "tnProcedure": null,
+              "tnPhase": "PhaseUnknown",
+              "severity":1,
+              "tnTool": {
+                "tag": "ErrorProne"
+              }
+            }
+          ],
+          null
+        ]
+      }
+    ]
+  ]
+}
