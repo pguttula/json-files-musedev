@@ -14,11 +14,11 @@ for line in project_info:
 	subprocess.call(["rm","-rf", projectname])
 	dirname = '/'+projectname+'/'
 	os.mkdir(dirname)
-	print "Cloning the Git repository"
+	print("Cloning the Git repository")
 	subprocess.call(["git","clone", gitlink])
 	#subprocess.call(["analyst","-t", projectname,"-C","master",">","/results/#results_mockito.json"])
-	print "Infer and Error Prone results to be written into results folder:" 
-	runcmd = "analyst -t /"+ projectname + " -C master > /results/results_"+ projectname+"_new.json"
+	print("Infer and Error Prone results to be written into results folder:") 
+	runcmd = "analyst -t /"+ projectname + " -C master > /results/results_"+ projectname+".json"
 	os.system(runcmd)
-	runcmd_del = "rm -rf "+projectname
+	runcmd_del = "rm -rf "+projectname+ "/"
 	os.system(runcmd_del)

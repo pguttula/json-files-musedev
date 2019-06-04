@@ -1,1 +1,0 @@
-{"tag":"AnalysisSuccess","contents":{"requestedTools":null,"toolResults":[[{"tag":"Infer"},{"tag":"ToolSuccess","contents":[[],null,{"analysisLOC":null,"analysisBuildSys":null,"analysisLang":null}]}],[{"tag":"ErrorProne"},{"tag":"ToolSuccess","contents":[[],null,{"analysisLOC":null,"analysisBuildSys":"Maven []","analysisLang":null}]}]]}}
