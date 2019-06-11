@@ -1,11 +1,2 @@
-facebook-android-sdk https://github.com/facebook/facebook-android-sdk.git
-Signal-Android https://github.com/signalapp/Signal-Android.git
-runelite https://github.com/runelite/runelite.git
-junit4 https://github.com/junit-team/junit4.git
-android https://github.com/owncloud/android.git
-cas https://github.com/apereo/cas.git
-greenDAO https://github.com/greenrobot/greenDAO.git
-CircleImageView https://github.com/hdodenhof/CircleImageView.git
-pinpoint https://github.com/naver/pinpoint.git
-arthas https://github.com/alibaba/arthas.git
-
+bigbluebutton https://github.com/bigbluebutton/bigbluebutton.git
+glazedlists https://github.com/glazedlists/glazedlists.git
