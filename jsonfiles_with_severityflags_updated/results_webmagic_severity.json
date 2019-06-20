@@ -394,7 +394,7 @@
               "tnCodeLine": null,
               "tnProcedure": "void FileCacheQueueScheduler.close()",
               "tnPhase": "PhaseUnknown",
-              "severity":0.4,
+              "severity":0.6,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -409,7 +409,7 @@
               "tnCodeLine": null,
               "tnProcedure": "void FileCacheQueueScheduler.close()",
               "tnPhase": "PhaseUnknown",
-              "severity":0.4,
+              "severity":0.6,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -424,7 +424,7 @@
               "tnCodeLine": null,
               "tnProcedure": "void FileCacheQueueScheduler.close()",
               "tnPhase": "PhaseUnknown",
-              "severity":0.4,
+              "severity":0.6,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -439,7 +439,7 @@
               "tnCodeLine": null,
               "tnProcedure": "void WebDriverPool.configure()",
               "tnPhase": "PhaseUnknown",
-              "severity":0.2,
+              "severity":0.8,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -454,7 +454,7 @@
               "tnCodeLine": null,
               "tnProcedure": "void WebDriverPool.configure()",
               "tnPhase": "PhaseUnknown",
-              "severity":0.2,
+              "severity":0.8,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -484,7 +484,7 @@
               "tnCodeLine": null,
               "tnProcedure": "void WebDriverPool.configure()",
               "tnPhase": "PhaseUnknown",
-              "severity":0.2,
+              "severity":0.8,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -499,7 +499,7 @@
               "tnCodeLine": null,
               "tnProcedure": "void WebDriverPool.configure()",
               "tnPhase": "PhaseUnknown",
-              "severity":0.2,
+              "severity":0.8,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -514,7 +514,7 @@
               "tnCodeLine": null,
               "tnProcedure": "void CountableThreadPool.execute(Runnable)",
               "tnPhase": "PhaseUnknown",
-              "severity":0.6,
+              "severity":0.8,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -529,7 +529,7 @@
               "tnCodeLine": null,
               "tnProcedure": "int FileCacheQueueScheduler.getLeftRequestsCount(Task)",
               "tnPhase": "PhaseUnknown",
-              "severity":0.8,
+              "severity":0.6,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -559,7 +559,7 @@
               "tnCodeLine": null,
               "tnProcedure": "void FileCacheQueueScheduler.pushWhenNoDuplicate(Request,Task)",
               "tnPhase": "PhaseUnknown",
-              "severity":0.8,
+              "severity":0.6,
               "tnTool": {
                 "tag": "Infer"
               }
@@ -574,7 +574,7 @@
               "tnCodeLine": null,
               "tnProcedure": "void FileCacheQueueScheduler.pushWhenNoDuplicate(Request,Task)",
               "tnPhase": "PhaseUnknown",
-              "severity":0.4,
+              "severity":0.6,
               "tnTool": {
                 "tag": "Infer"
               }

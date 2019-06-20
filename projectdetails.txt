@@ -1,2 +1,0 @@
-bigbluebutton https://github.com/bigbluebutton/bigbluebutton.git
-glazedlists https://github.com/glazedlists/glazedlists.git

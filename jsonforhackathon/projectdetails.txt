@@ -1,0 +1,13 @@
+jenkins https://github.com/jenkinsci/jenkins.git
+libzmq https://github.com/zeromq/libzmq.git
+uaa https://github.com/cloudfoundry/uaa.git
+dubbo https://github.com/apache/dubbo.git
+runelite https://github.com/runelite/runelite.git
+storm https://github.com/apache/storm.git
+sonarqube https://github.com/SonarSource/sonarqube.git
+mockito https://github.com/mockito/mockito.git
+okhttp https://github.com/square/okhttp.git
+Hystrix https://github.com/Netflix/Hystrix.git
+rocketmq https://github.com/apache/rocketmq.git
+glazedlists https://github.com/glazedlists/glazedlists.git
+hibernate-orm https://github.com/hibernate/hibernate-orm.git
