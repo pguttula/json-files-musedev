@@ -1,0 +1,719 @@
+{
+  "tag": "AnalysisSuccess",
+  "contents": {
+    "requestedTools": null,
+    "toolResults": [
+      [
+        {
+          "tag": "Infer"
+        },
+        {
+          "tag": "ToolSuccess",
+          "contents": [
+            [
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 74.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/Progress.java",
+                "tnLine": 74,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.Progress.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 57.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/CheckHandshake.java",
+                "tnLine": 57,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.CheckHandshake.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 17.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/guide/GetExample.java",
+                "tnLine": 17,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.guide.GetExample.run(java.lang.String):java.lang.String",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "THREAD_SAFETY_VIOLATION",
+                "tnDesc": "Read/Write race. Non-private method `MockResponse OAuthSessionFactory.dispatch(RecordedRequest)` reads without synchronization from `this.mockWebServer`. Potentially races with write in method `OAuthSessionFactory.start()`.\n Reporting because this access may occur on a background thread.",
+                "tnFile": "samples/slack/src/main/java/okhttp3/slack/OAuthSessionFactory.java",
+                "tnLine": 80,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.slack.OAuthSessionFactory.dispatch(okhttp3.mockwebserver.RecordedRequest):okhttp3.mockwebserver.MockResponse",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "THREAD_SAFETY_VIOLATION",
+                "tnDesc": "Read/Write race. Non-private method `void InstallUncaughtExceptionHandlerListener.testRunFinished(Result)` reads without synchronization from `this.oldDefaultUncaughtExceptionHandler`. Potentially races with write in method `InstallUncaughtExceptionHandlerListener.testRunStarted(...)`.\n Reporting because this access may occur on a background thread.",
+                "tnFile": "okhttp-testing-support/src/main/java/okhttp3/testing/InstallUncaughtExceptionHandlerListener.java",
+                "tnLine": 66,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.testing.InstallUncaughtExceptionHandlerListener.testRunFinished(org.junit.runner.Result):void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 52.",
+                "tnFile": "samples/unixdomainsockets/src/main/java/okhttp3/unixdomainsockets/ClientAndServer.java",
+                "tnLine": 52,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.unixdomainsockets.ClientAndServer.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 38.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/ParseResponseWithMoshi.java",
+                "tnLine": 38,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.ParseResponseWithMoshi.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 55.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/PostMultipart.java",
+                "tnLine": 55,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.PostMultipart.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "RESOURCE_LEAK",
+                "tnDesc": "resource of type `okhttp3.UppercaseResponseInterceptor$1` acquired by call to `UppercaseResponseInterceptor$1(...)` at line 31 is not released after line 31.\n**Note**: potential exception at line 31",
+                "tnFile": "okhttp-testing-support/src/main/java/okhttp3/UppercaseResponseInterceptor.java",
+                "tnLine": 31,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.UppercaseResponseInterceptor.uppercaseResponse(okhttp3.Response):okhttp3.Response",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `body` last assigned on line 49 could be null and is dereferenced at line 51.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/PrintEvents.java",
+                "tnLine": 51,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.PrintEvents$1.onResponse(okhttp3.Call,okhttp3.Response):void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 22.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/guide/PostExample.java",
+                "tnLine": 22,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.guide.PostExample.post(java.lang.String,java.lang.String):java.lang.String",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "THREAD_SAFETY_VIOLATION",
+                "tnDesc": "Read/Write race. Non-private method `HttpUrl OAuthSessionFactory.newAuthorizeUrl(String,String,OAuthSessionFactory$Listener)` reads without synchronization from `this.mockWebServer`. Potentially races with write in method `OAuthSessionFactory.start()`.\n Reporting because this access may occur on a background thread.",
+                "tnFile": "samples/slack/src/main/java/okhttp3/slack/OAuthSessionFactory.java",
+                "tnLine": 58,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.slack.OAuthSessionFactory.newAuthorizeUrl(java.lang.String,java.lang.String,okhttp3.slack.OAuthSessionFactory$Listener):okhttp3.HttpUrl",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `SlackApi.baseUrl.newBuilder(\"/oauth/authorize\")` could be null and is dereferenced at line 63.",
+                "tnFile": "samples/slack/src/main/java/okhttp3/slack/SlackApi.java",
+                "tnLine": 63,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.slack.SlackApi.authorizeUrl(java.lang.String,okhttp3.HttpUrl,okio.ByteString,java.lang.String):okhttp3.HttpUrl",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `chain.connection()` could be null and is dereferenced at line 35.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/CheckHandshake.java",
+                "tnLine": 35,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.CheckHandshake$1.intercept(okhttp3.Interceptor$Chain):okhttp3.Response",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 72.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/CustomTrust.java",
+                "tnLine": 72,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.CustomTrust.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 40.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/SynchronousGet.java",
+                "tnLine": 40,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.SynchronousGet.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 43.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/PostFile.java",
+                "tnLine": 43,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.PostFile.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 49.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/PrintEventsNonConcurrent.java",
+                "tnLine": 49,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.PrintEventsNonConcurrent.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "RESOURCE_LEAK",
+                "tnDesc": "resource of type `okio.Buffer` acquired by call to `new()` at line 48 is not released after line 48.",
+                "tnFile": "okhttp-testing-support/src/main/java/okhttp3/UppercaseRequestInterceptor.java",
+                "tnLine": 48,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.UppercaseRequestInterceptor$2.write(okio.Buffer,long):void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 37.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/LoggingInterceptors.java",
+                "tnLine": 37,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.LoggingInterceptors.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.handshake()` could be null and is dereferenced at line 163.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/CustomCipherSuites.java",
+                "tnLine": 163,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.CustomCipherSuites.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 43.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/PreemptiveAuth.java",
+                "tnLine": 43,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.PreemptiveAuth.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 40.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/PostForm.java",
+                "tnLine": 40,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.PostForm.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "RESOURCE_LEAK",
+                "tnDesc": "resource of type `okio.Buffer` acquired by call to `new()` at line 149 is not released after line 150.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/CustomTrust.java",
+                "tnLine": 150,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.CustomTrust.trustedCertificatesInputStream():java.io.InputStream",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response1.body()` could be null and is dereferenced at line 46.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/CacheResponse.java",
+                "tnLine": 46,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.CacheResponse.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `SlackApi.baseUrl.newBuilder(\"oauth.access\")` could be null and is dereferenced at line 78.",
+                "tnFile": "samples/slack/src/main/java/okhttp3/slack/SlackApi.java",
+                "tnLine": 78,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.slack.SlackApi.exchangeCode(java.lang.String,okhttp3.HttpUrl):okhttp3.slack.OAuthSession",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "THREAD_SAFETY_VIOLATION",
+                "tnDesc": "Read/Write race. Non-private method `void RtmSession.close()` reads without synchronization from `this.webSocket`. Potentially races with write in method `RtmSession.open(...)`.\n Reporting because this access may occur on a background thread.",
+                "tnFile": "samples/slack/src/main/java/okhttp3/slack/RtmSession.java",
+                "tnLine": 64,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.slack.RtmSession.close():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "RESOURCE_LEAK",
+                "tnDesc": "resource of type `okhttp3.slack.RtmSession` acquired by call to `RtmSession(...)` at line 70 is not released after line 71.",
+                "tnFile": "samples/slack/src/main/java/okhttp3/slack/SlackClient.java",
+                "tnLine": 71,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.slack.SlackClient.startRtm():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 63.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/PostStreaming.java",
+                "tnLine": 63,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.PostStreaming.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 64.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/RequestBodyCompression.java",
+                "tnLine": 64,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.RequestBodyCompression.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "RESOURCE_LEAK",
+                "tnDesc": "resource of type `okhttp3.mockwebserver.MockWebServer` acquired by call to `new()` at line 41 is not released after line 53.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/HttpsServer.java",
+                "tnLine": 53,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.HttpsServer.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "RESOURCE_LEAK",
+                "tnDesc": "resource of type `okhttp3.mockwebserver.MockWebServer` acquired by call to `new()` at line 33 is not released after line 36.",
+                "tnFile": "samples/static-server/src/main/java/okhttp3/sample/SampleServer.java",
+                "tnLine": 36,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.sample.SampleServer.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 114.",
+                "tnFile": "samples/crawler/src/main/java/okhttp3/sample/Crawler.java",
+                "tnLine": 114,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.sample.Crawler.fetch(okhttp3.HttpUrl):void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `body` last assigned on line 35 could be null and is dereferenced at line 36.",
+                "tnFile": "samples/simple-client/src/main/java/okhttp3/sample/OkHttpContributors.java",
+                "tnLine": 36,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.sample.OkHttpContributors.main(java.lang.String[]):void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 48.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/PostString.java",
+                "tnLine": 48,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.PostString.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 47.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/PostStreamingWithPipe.java",
+                "tnLine": 47,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.PostStreamingWithPipe.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `SlackApi.baseUrl.newBuilder(\"rtm.start\")` could be null and is dereferenced at line 96.",
+                "tnFile": "samples/slack/src/main/java/okhttp3/slack/SlackApi.java",
+                "tnLine": 96,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.slack.SlackApi.rtmStart(java.lang.String):okhttp3.slack.RtmStartResponse",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.handshake()` could be null and is dereferenced at line 45.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/CertificatePinning.java",
+                "tnLine": 45,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.CertificatePinning.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.body()` could be null and is dereferenced at line 56.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/Authenticate.java",
+                "tnLine": 56,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.Authenticate.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `body` last assigned on line 64 could be null and is dereferenced at line 66.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/PrintEvents.java",
+                "tnLine": 66,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.PrintEvents$2.onResponse(okhttp3.Call,okhttp3.Response):void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `response.handshake()` could be null and is dereferenced at line 56.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/HttpsServer.java",
+                "tnLine": 56,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.HttpsServer.run():void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `responseBody` last assigned on line 41 could be null and is dereferenced at line 49.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/AsynchronousGet.java",
+                "tnLine": 49,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "okhttp3.recipes.AsynchronousGet$1.onResponse(okhttp3.Call,okhttp3.Response):void",
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              }
+            ],
+            null,
+            {
+              "analysisLOC": null,
+              "analysisBuildSys": "Gradlew [\"assemble\",\"-xtest\"]",
+              "analysisLang": null
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "tag": "ErrorProne_JDK8"
+        },
+        {
+          "tag": "ToolSuccess",
+          "contents": [
+            [
+              {
+                "tnType": "FutureReturnValueIgnored",
+                "tnDesc": "Return value of methods returning Future must be checked. Ignoring returned Futures suppresses exceptions thrown from the code that completes the Future.",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/CancelCall.java",
+                "tnLine": 40,
+                "tnColumn": 22,
+                "tnPatch": null,
+                "tnCodeLine": "    executor.schedule(() -> {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "CatchAndPrintStackTrace",
+                "tnDesc": "Logging or rethrowing exceptions should usually be preferred to catching and calling printStackTrace",
+                "tnFile": "samples/guide/src/main/java/okhttp3/recipes/PostStreamingWithPipe.java",
+                "tnLine": 64,
+                "tnColumn": 11,
+                "tnPatch": null,
+                "tnCodeLine": "          e.printStackTrace();",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "CatchAndPrintStackTrace",
+                "tnDesc": "Logging or rethrowing exceptions should usually be preferred to catching and calling printStackTrace",
+                "tnFile": "samples/crawler/src/main/java/okhttp3/sample/Crawler.java",
+                "tnLine": 58,
+                "tnColumn": 11,
+                "tnPatch": null,
+                "tnCodeLine": "          e.printStackTrace();",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown", 
+ 	 	 	 	 	 	 	 "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              }
+            ],
+            null,
+            {
+              "analysisLOC": null,
+              "analysisBuildSys": "Gradlew [\"assemble\",\"-xtest\"]",
+              "analysisLang": null
+            }
+          ]
+        }
+      ]
+    ]
+  }
+}

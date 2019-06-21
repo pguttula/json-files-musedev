@@ -1,0 +1,2957 @@
+{
+  "tag": "AnalysisSuccess",
+  "contents": {
+    "requestedTools": null,
+    "toolResults": [
+      [
+        {
+          "tag": "Infer"
+        },
+        {
+          "tag": "ToolSuccess",
+          "contents": [
+            [
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `metaHolder.method` last assigned on line 60 could be null and is dereferenced by call to `createCacheRemoveInvocationContext(...)` at line 62.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCacheAspect.java",
+                "tnLine": 62,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCacheAspect.methodsAnnotatedWithCacheRemove(org.aspectj.lang.ProceedingJoinPoint):java.lang.Object",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `propertiesStrategy` last assigned on line 152 could be null and is dereferenced at line 153.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/HystrixTimer.java",
+                "tnLine": 153,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.util.HystrixTimer$ScheduledExecutor.initialize():void",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `void HystrixDynamicProperty.addCallback(Runnable)` of un-annotated interface `com.netflix.hystrix.strategy.properties.HystrixDynamicProperty`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/AbstractHystrixCommand.java",
+                "tnLine": 51,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.AbstractHystrixCommand.<init>(com.netflix.hystrix.contrib.javanica.command.HystrixCommandBuilder)",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "THREAD_SAFETY_VIOLATION",
+                "tnDesc": "Unprotected write. Non-private method `void HystrixRollingNumber.increment(HystrixRollingNumberEvent)` indirectly writes to field `rs.[_]` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/HystrixRollingNumber.java",
+                "tnLine": 99,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.util.HystrixRollingNumber.increment(com.netflix.hystrix.util.HystrixRollingNumberEvent):void",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "THREAD_SAFETY_VIOLATION",
+                "tnDesc": "Read/Write race. Non-private method `HystrixCommandMetrics$HealthCounts HystrixCommandMetrics.getHealthCounts()` reads without synchronization from `this.healthCountsStream`. Potentially races with write in method `HystrixCommandMetrics.resetStream()`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixCommandMetrics.java",
+                "tnLine": 374,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.HystrixCommandMetrics.getHealthCounts():com.netflix.hystrix.HystrixCommandMetrics$HealthCounts",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `String CacheRemove.commandKey()` of un-annotated interface `com.netflix.hystrix.contrib.javanica.cache.annotation.CacheRemove`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/BatchHystrixCommand.java",
+                "tnLine": 51,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.BatchHystrixCommand.run():java.util.List",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `hystrixPropertiesStrategy` last assigned on line 62 could be null and is dereferenced at line 63.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/properties/HystrixPropertiesFactory.java",
+                "tnLine": 63,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.strategy.properties.HystrixPropertiesFactory.getCommandProperties(com.netflix.hystrix.HystrixCommandKey,com.netflix.hystrix.HystrixCommandProperties$Setter):com.netflix.hystrix.HystrixCommandProperties",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `lastBucket` last assigned on line 308 could be null and is dereferenced at line 309.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/HystrixRollingNumber.java",
+                "tnLine": 309,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.util.HystrixRollingNumber.getCurrentBucket():com.netflix.hystrix.util.HystrixRollingNumber$Bucket",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `commandParametrizedType` last assigned on line 124 could be null and is dereferenced by call to `validateParametrizedType(...)` at line 126.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/utils/FallbackMethod.java",
+                "tnLine": 126,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.utils.FallbackMethod.validateReturnType(java.lang.reflect.Method):void",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `String CacheRemove.commandKey()` of un-annotated interface `com.netflix.hystrix.contrib.javanica.cache.annotation.CacheRemove`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/BatchHystrixCommand.java",
+                "tnLine": 71,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.BatchHystrixCommand.getFallback():java.util.List",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `void HystrixDynamicProperty.addCallback(Runnable)` of un-annotated interface `com.netflix.hystrix.strategy.properties.HystrixDynamicProperty`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/GenericObservableCommand.java",
+                "tnLine": 57,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.GenericObservableCommand.<init>(com.netflix.hystrix.contrib.javanica.command.HystrixCommandBuilder)",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `HystrixThreadPool$HystrixThreadPoolDefault.properties.maxQueueSize()` could be null and is dereferenced at line 174.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixThreadPool.java",
+                "tnLine": 174,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.HystrixThreadPool$HystrixThreadPoolDefault.<init>(com.netflix.hystrix.HystrixThreadPoolKey,com.netflix.hystrix.HystrixThreadPoolProperties$Setter)",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `void HystrixDynamicProperty.addCallback(Runnable)` of un-annotated interface `com.netflix.hystrix.strategy.properties.HystrixDynamicProperty`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/GenericCommand.java",
+                "tnLine": 36,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.GenericCommand.<init>(com.netflix.hystrix.contrib.javanica.command.HystrixCommandBuilder)",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `void HystrixDynamicProperty.addCallback(Runnable)` of un-annotated interface `com.netflix.hystrix.strategy.properties.HystrixDynamicProperty`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/BatchHystrixCommand.java",
+                "tnLine": 41,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.BatchHystrixCommand.<init>(com.netflix.hystrix.contrib.javanica.command.HystrixCommandBuilder)",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `commandParametrizedType` last assigned on line 109 could be null and is dereferenced by call to `validateParametrizedType(...)` at line 111.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/utils/FallbackMethod.java",
+                "tnLine": 111,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.utils.FallbackMethod.validateReturnType(java.lang.reflect.Method):void",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "THREAD_SAFETY_VIOLATION",
+                "tnDesc": "Read/Write race. Non-private method `HealthCountsStream HystrixCommandMetrics.getHealthCountsStream()` reads without synchronization from `this.healthCountsStream`. Potentially races with write in method `HystrixCommandMetrics.resetStream()`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixCommandMetrics.java",
+                "tnLine": 347,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.HystrixCommandMetrics.getHealthCountsStream():com.netflix.hystrix.metric.consumer.HealthCountsStream",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `method` last assigned on line 52 could be null and is dereferenced by call to `getAjcMethodAroundAdvice(...)` at line 59.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCacheAspect.java",
+                "tnLine": 59,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCacheAspect.methodsAnnotatedWithCacheRemove(org.aspectj.lang.ProceedingJoinPoint):java.lang.Object",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `String CacheRemove.commandKey()` of un-annotated interface `com.netflix.hystrix.contrib.javanica.cache.annotation.CacheRemove`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/AbstractHystrixCommand.java",
+                "tnLine": 175,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.AbstractHystrixCommand.flushCache():void",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `HystrixTimer.executor.get()` could be null and is dereferenced at line 138.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/HystrixTimer.java",
+                "tnLine": 138,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.util.HystrixTimer.startThreadIfNeeded():void",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `getInstance().getConcurrencyStrategy()` could be null and is dereferenced by call to `HystrixContextCallable(...)` at line 36.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/concurrency/HystrixContextCallable.java",
+                "tnLine": 36,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.strategy.concurrency.HystrixContextCallable.<init>(java.util.concurrent.Callable)",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `lastBucket` last assigned on line 258 could be null and is dereferenced at line 259.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/HystrixRollingPercentile.java",
+                "tnLine": 259,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.util.HystrixRollingPercentile.getCurrentBucket():com.netflix.hystrix.util.HystrixRollingPercentile$Bucket",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `getInstance().getConcurrencyStrategy()` could be null and is dereferenced by call to `HystrixContextRunnable(...)` at line 33.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/concurrency/HystrixContextRunnable.java",
+                "tnLine": 33,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.strategy.concurrency.HystrixContextRunnable.<init>(com.netflix.hystrix.examples.demo.HystrixCommandAsyncDemo$ContextAwareRxSchedulersHook$1)",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `String HystrixGeneratedCacheKey.getCacheKey()` of un-annotated interface `com.netflix.hystrix.contrib.javanica.cache.HystrixGeneratedCacheKey`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/GenericObservableCommand.java",
+                "tnLine": 136,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.GenericObservableCommand.getCacheKey():java.lang.String",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `String CacheRemove.commandKey()` of un-annotated interface `com.netflix.hystrix.contrib.javanica.cache.annotation.CacheRemove`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/GenericObservableCommand.java",
+                "tnLine": 83,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.GenericObservableCommand.construct():rx.Observable",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `String CacheRemove.commandKey()` of un-annotated interface `com.netflix.hystrix.contrib.javanica.cache.annotation.CacheRemove`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/AbstractHystrixCommand.java",
+                "tnLine": 146,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.AbstractHystrixCommand.process(com.netflix.hystrix.contrib.javanica.command.AbstractHystrixCommand$Action):java.lang.Object",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "THREAD_SAFETY_VIOLATION",
+                "tnDesc": "Unprotected write. Non-private method `void HystrixRollingNumber.add(HystrixRollingNumberEvent,long)` indirectly writes to field `rs.[_]` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/HystrixRollingNumber.java",
+                "tnLine": 113,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.util.HystrixRollingNumber.add(com.netflix.hystrix.util.HystrixRollingNumberEvent,long):void",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `String CacheRemove.commandKey()` of un-annotated interface `com.netflix.hystrix.contrib.javanica.cache.annotation.CacheRemove`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/GenericCommand.java",
+                "tnLine": 71,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.GenericCommand.getFallback():java.lang.Object",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `Object CommandAction.executeWithArgs(ExecutionType,java.lang.Object[])` of un-annotated interface `com.netflix.hystrix.contrib.javanica.command.CommandAction`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/GenericObservableCommand.java",
+                "tnLine": 108,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.GenericObservableCommand.resumeWithFallback():rx.Observable",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `String CacheRemove.commandKey()` of un-annotated interface `com.netflix.hystrix.contrib.javanica.cache.annotation.CacheRemove`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/BatchHystrixCommand.java",
+                "tnLine": 35,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.BatchHystrixCommand.run():java.lang.Object",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "THREAD_SAFETY_VIOLATION",
+                "tnDesc": "Unprotected write. Non-private method `void HystrixRollingNumber.updateRollingMax(HystrixRollingNumberEvent,long)` indirectly writes to field `rs.[_]` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/HystrixRollingNumber.java",
+                "tnLine": 125,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.util.HystrixRollingNumber.updateRollingMax(com.netflix.hystrix.util.HystrixRollingNumberEvent,long):void",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "THREAD_SAFETY_VIOLATION",
+                "tnDesc": "Unprotected write. Non-private method `void HystrixRollingNumber.reset()` indirectly writes to field `rs.[_]` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/HystrixRollingNumber.java",
+                "tnLine": 137,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.util.HystrixRollingNumber.reset():void",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `hystrixPropertiesStrategy` last assigned on line 140 could be null and is dereferenced at line 141.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/properties/HystrixPropertiesFactory.java",
+                "tnLine": 141,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.strategy.properties.HystrixPropertiesFactory.getCollapserProperties(com.netflix.hystrix.HystrixCollapserKey,com.netflix.hystrix.HystrixCollapserProperties$Setter):com.netflix.hystrix.HystrixCollapserProperties",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `String CacheRemove.commandKey()` of un-annotated interface `com.netflix.hystrix.contrib.javanica.cache.annotation.CacheRemove`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/GenericCommand.java",
+                "tnLine": 45,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.GenericCommand.run():java.lang.Object",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `String HystrixGeneratedCacheKey.getCacheKey()` of un-annotated interface `com.netflix.hystrix.contrib.javanica.cache.HystrixGeneratedCacheKey`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/AbstractHystrixCommand.java",
+                "tnLine": 109,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.AbstractHystrixCommand.getCacheKey():java.lang.String",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `method` last assigned on line 88 could be null and is dereferenced at line 90.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCommandAspect.java",
+                "tnLine": 90,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect.methodsAnnotatedWithHystrixCommand(org.aspectj.lang.ProceedingJoinPoint):java.lang.Object",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object returned by `getInstance().getConcurrencyStrategy()` could be null and is dereferenced by call to `HystrixContexSchedulerAction(...)` at line 40.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/concurrency/HystrixContexSchedulerAction.java",
+                "tnLine": 40,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.strategy.concurrency.HystrixContexSchedulerAction.<init>(rx.functions.Action0)",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `String CacheRemove.commandKey()` of un-annotated interface `com.netflix.hystrix.contrib.javanica.cache.annotation.CacheRemove`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/GenericObservableCommand.java",
+                "tnLine": 146,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.GenericObservableCommand.flushCache():void",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "INTERFACE_NOT_THREAD_SAFE",
+                "tnDesc": "Unprotected call to method `String CacheRemove.commandKey()` of un-annotated interface `com.netflix.hystrix.contrib.javanica.cache.annotation.CacheRemove`. Consider annotating the class with `@ThreadSafe`, adding a lock, or using an interface that is known to be thread-safe.\n Reporting because the current class is annotated `@ThreadSafe`.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/BatchHystrixCommand.java",
+                "tnLine": 35,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.command.BatchHystrixCommand.getFallback():java.lang.Object",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `hystrixPropertiesStrategy` last assigned on line 101 could be null and is dereferenced at line 102.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/properties/HystrixPropertiesFactory.java",
+                "tnLine": 102,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.strategy.properties.HystrixPropertiesFactory.getThreadPoolProperties(com.netflix.hystrix.HystrixThreadPoolKey,com.netflix.hystrix.HystrixThreadPoolProperties$Setter):com.netflix.hystrix.HystrixThreadPoolProperties",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `context` last assigned on line 62 could be null and is dereferenced by call to `clearCache(...)` at line 63.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/aop/aspectj/HystrixCacheAspect.java",
+                "tnLine": 63,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCacheAspect.methodsAnnotatedWithCacheRemove(org.aspectj.lang.ProceedingJoinPoint):java.lang.Object",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `concurrencyStrategy` last assigned on line 173 could be null and is dereferenced at line 177.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixThreadPool.java",
+                "tnLine": 177,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.netflix.hystrix.HystrixThreadPool$HystrixThreadPoolDefault.<init>(com.netflix.hystrix.HystrixThreadPoolKey,com.netflix.hystrix.HystrixThreadPoolProperties$Setter)",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              }
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "tag": "ErrorProne_JDK8"
+        },
+        {
+          "tag": "ToolSuccess",
+          "contents": [
+            [
+              {
+                "tnType": "CatchAndPrintStackTrace",
+                "tnDesc": "Logging or rethrowing exceptions should usually be preferred to catching and calling printStackTrace",
+                "tnFile": "hystrix-examples/src/main/java/com/netflix/hystrix/examples/demo/HystrixCommandDemo.java",
+                "tnLine": 80,
+                "tnColumn": 21,
+                "tnPatch": null,
+                "tnCodeLine": "                    e.printStackTrace();",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "toString overrides method in Object; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/LongAdder.java",
+                "tnLine": 168,
+                "tnColumn": 19,
+                "tnPatch": null,
+                "tnCodeLine": "    public String toString() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "get implements method in HystrixRequestVariable; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/concurrency/HystrixRequestVariableDefault.java",
+                "tnLine": 74,
+                "tnColumn": 14,
+                "tnPatch": null,
+                "tnCodeLine": "    public T get() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MutableConstantField",
+                "tnDesc": "Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/conf/HystrixPropertiesManager.java",
+                "tnLine": 140,
+                "tnColumn": 29,
+                "tnPatch": null,
+                "tnCodeLine": "    private static final Map<String, PropSetter<HystrixCommandProperties.Setter, String>> CMD_PROP_MAP =",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "iterator implements method in Iterable; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/HystrixRollingNumber.java",
+                "tnLine": 632,
+                "tnColumn": 33,
+                "tnPatch": null,
+                "tnCodeLine": "        public Iterator<Bucket> iterator() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "execute implements method in HystrixExecutable; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixCommand.java",
+                "tnLine": 342,
+                "tnColumn": 14,
+                "tnPatch": null,
+                "tnCodeLine": "    public R execute() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "describeTo implements method in SelfDescribing; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/IsAnything.java)",
+                "tnLine": 30,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void describeTo(Description description) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "iterator implements method in Iterable; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/HystrixRollingPercentile.java",
+                "tnLine": 584,
+                "tnColumn": 33,
+                "tnPatch": null,
+                "tnCodeLine": "        public Iterator<Bucket> iterator() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "next implements method in Iterator; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/internal/SelfDescribingValueIterator.java)",
+                "tnLine": 18,
+                "tnColumn": 27,
+                "tnPatch": null,
+                "tnCodeLine": "    public SelfDescribing next() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "matches implements method in Matcher; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/AllOf.java)",
+                "tnLine": 22,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean matches(Object o) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "matches implements method in Matcher; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/IsNot.java)",
+                "tnLine": 22,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean matches(Object arg) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "TypeParameterUnusedInFormals",
+                "tnDesc": "Declaring a type parameter that is only used in the return type is a misuse of generics: operations on the type parameter are unchecked, it hides unsafe casts at invocations of the method, and it interacts badly with method overload resolution.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/Exceptions.java",
+                "tnLine": 17,
+                "tnColumn": 44,
+                "tnPatch": null,
+                "tnCodeLine": "    private static <T extends Throwable> T doThrow(Throwable ex) throws T {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "describeTo implements method in SelfDescribing; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/IsInstanceOf.java)",
+                "tnLine": 31,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void describeTo(Description description) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedMethod",
+                "tnDesc": "Private method 'wrapWithOnEmitHook' is never used.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1543,
+                "tnColumn": 15,
+                "tnPatch": null,
+                "tnCodeLine": "    private R wrapWithOnEmitHook(R r) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "describeTo implements method in SelfDescribing; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/DescribedAs.java)",
+                "tnLine": 32,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void describeTo(Description description) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "BigDecimalLiteralDouble",
+                "tnDesc": "new BigDecimal(double) loses precision in this case. The exact value here is `new BigDecimal(\"123.4500000000000028421709430404007434844970703125\")`.",
+                "tnFile": "hystrix-examples/src/main/java/com/netflix/hystrix/examples/demo/HystrixCommandDemo.java",
+                "tnLine": 100,
+                "tnColumn": 121,
+                "tnPatch": null,
+                "tnCodeLine": "        CreditCardCommand credit = new CreditCardCommand(previouslySavedOrder, paymentInformation.get(), new BigDecimal(123.45));",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "toString overrides method in Object; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/LongMaxUpdater.java",
+                "tnLine": 152,
+                "tnColumn": 19,
+                "tnPatch": null,
+                "tnCodeLine": "    public String toString() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "FutureReturnValueIgnored",
+                "tnDesc": "Returning java.util.concurrent.Future from method that returns java.lang.Object. Errors from the returned future may be ignored.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/CommandExecutor.java",
+                "tnLine": 60,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "                return executable.queue();",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "matches implements method in Matcher; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/Is.java)",
+                "tnLine": 25,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean matches(Object arg) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "doFilter implements method in Filter; expected @Override",
+                "tnFile": "hystrix-contrib/hystrix-request-servlet/src/main/java/com/netflix/hystrix/contrib/requestservlet/HystrixRequestContextServletFilter.java",
+                "tnLine": 50,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The field 'user' is never read.",
+                "tnFile": "hystrix-examples/src/main/java/com/netflix/hystrix/examples/demo/PaymentInformation.java",
+                "tnLine": 23,
+                "tnColumn": 31,
+                "tnPatch": null,
+                "tnCodeLine": "    private final UserAccount user;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "JavaLangClash",
+                "tnDesc": "com.netflix.hystrix.contrib.javanica.utils.FallbackMethod.Error clashes with java.lang.Error",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/utils/FallbackMethod.java",
+                "tnLine": 410,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    private static class Error {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "ImmutableEnumChecker",
+                "tnDesc": "enums should be immutable: 'AdviceType' has non-final field 'postfix'",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/utils/ajc/AjcUtils.java",
+                "tnLine": 98,
+                "tnColumn": 24,
+                "tnPatch": null,
+                "tnCodeLine": "        private String postfix;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "toString overrides method in Object; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/properties/HystrixPropertiesChainedArchaiusProperty.java",
+                "tnLine": 122,
+                "tnColumn": 23,
+                "tnPatch": null,
+                "tnCodeLine": "        public String toString() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "run implements method in PrivilegedExceptionAction; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/Striped64.java",
+                "tnLine": 347,
+                "tnColumn": 48,
+                "tnPatch": null,
+                "tnCodeLine": "                        public sun.misc.Unsafe run() throws Exception {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "describeTo implements method in SelfDescribing; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/internal/SelfDescribingValue.java)",
+                "tnLine": 13,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void describeTo(Description description) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The field 'VERSION' is never read.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/config/HystrixCommandConfiguration.java",
+                "tnLine": 25,
+                "tnColumn": 33,
+                "tnPatch": null,
+                "tnCodeLine": "    private static final String VERSION = \"1\";",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The parameter 'ms' is never read.",
+                "tnFile": "hystrix-examples/src/main/java/com/netflix/hystrix/examples/basic/ObservableCollapserGetWordForNumber.java",
+                "tnLine": 305,
+                "tnColumn": 0,
+                "tnPatch": null,
+                "tnCodeLine": "\t\tprivate void sleep(final long ms)",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "matches implements method in Matcher; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/IsNull.java)",
+                "tnLine": 15,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean matches(Object o) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "appendValue implements method in Description; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/BaseDescription.java)",
+                "tnLine": 25,
+                "tnColumn": 24,
+                "tnPatch": null,
+                "tnCodeLine": "    public Description appendValue(Object value) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "describeTo implements method in SelfDescribing; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/Is.java)",
+                "tnLine": 29,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void describeTo(Description description) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The parameter '_cmd' is never read.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 900,
+                "tnColumn": 139,
+                "tnPatch": null,
+                "tnCodeLine": "    private Observable<R> handleRequestCacheHitAndEmitValues(final HystrixCommandResponseFromCache<R> fromCache, final AbstractCommand<R> _cmd) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "observe implements method in HystrixObservable; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixObservableCollapser.java",
+                "tnLine": 396,
+                "tnColumn": 37,
+                "tnPatch": null,
+                "tnCodeLine": "    public Observable<ResponseType> observe() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "describeTo implements method in SelfDescribing; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/AllOf.java)",
+                "tnLine": 31,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void describeTo(Description description) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "doubleValue implements method in Number; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/LongMaxUpdater.java",
+                "tnLine": 185,
+                "tnColumn": 19,
+                "tnPatch": null,
+                "tnCodeLine": "    public double doubleValue() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The parameter 'request' is never read.",
+                "tnFile": "hystrix-contrib/hystrix-metrics-event-stream/src/main/java/com/netflix/hystrix/contrib/sample/stream/HystrixSampleSseServlet.java",
+                "tnLine": 115,
+                "tnColumn": 51,
+                "tnPatch": null,
+                "tnCodeLine": "    private void handleRequest(HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "NonAtomicVolatileUpdate",
+                "tnDesc": "This update of a volatile variable is non-atomic",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixCachedObservable.java",
+                "tnLine": 31,
+                "tnColumn": 49,
+                "tnPatch": null,
+                "tnCodeLine": "                        outstandingSubscriptions++;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "remove implements method in Iterator; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/internal/SelfDescribingValueIterator.java)",
+                "tnLine": 22,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void remove() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The field 'user' is never read.",
+                "tnFile": "hystrix-examples/src/main/java/com/netflix/hystrix/examples/demo/Order.java",
+                "tnLine": 26,
+                "tnColumn": 25,
+                "tnPatch": null,
+                "tnCodeLine": "    private UserAccount user;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The field 'queue' is never read.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixThreadPool.java",
+                "tnLine": 166,
+                "tnColumn": 47,
+                "tnPatch": null,
+                "tnCodeLine": "        private final BlockingQueue<Runnable> queue;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "FutureReturnValueIgnored",
+                "tnDesc": "Returning com.netflix.hystrix.contrib.javanica.utils.FutureDecorator from method that returns java.lang.Object. Errors from the returned future may be ignored.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/CommandExecutor.java",
+                "tnLine": 58,
+                "tnColumn": 21,
+                "tnPatch": null,
+                "tnCodeLine": "                    return new FutureDecorator(executable.queue());",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "toString overrides method in Object; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixCommandMetrics.java",
+                "tnLine": 439,
+                "tnColumn": 23,
+                "tnPatch": null,
+                "tnCodeLine": "        public String toString() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "isResponseRejected implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1890,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean isResponseRejected() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "DefaultCharset",
+                "tnDesc": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+                "tnFile": "hystrix-contrib/hystrix-metrics-event-stream-jaxrs/src/main/java/com/netflix/hystrix/contrib/metrics/HystrixStreamingOutputProvider.java",
+                "tnLine": 81,
+                "tnColumn": 0,
+                "tnPatch": null,
+                "tnCodeLine": "\t\t\t\t\t\t\tentity.write((\"data: \" + sampleDataAsString + \"\\n\\n\").getBytes());",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "hasNext implements method in Iterator; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/internal/SelfDescribingValueIterator.java)",
+                "tnLine": 14,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean hasNext() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "appendValueList implements method in Description; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/BaseDescription.java)",
+                "tnLine": 60,
+                "tnColumn": 0,
+                "tnPatch": null,
+                "tnCodeLine": "\tpublic <T> Description appendValueList(String start, String separator, String end, Iterable<T> values) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The field 'name' is never read.",
+                "tnFile": "hystrix-examples/src/main/java/com/netflix/hystrix/examples/basic/CommandWithStubbedFallback.java",
+                "tnLine": 68,
+                "tnColumn": 30,
+                "tnPatch": null,
+                "tnCodeLine": "        private final String name;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "describeTo implements method in SelfDescribing; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/IsEqual.java)",
+                "tnLine": 28,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void describeTo(Description description) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "floatValue implements method in Number; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/LongMaxUpdater.java",
+                "tnLine": 177,
+                "tnColumn": 18,
+                "tnPatch": null,
+                "tnCodeLine": "    public float floatValue() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "describeTo implements method in SelfDescribing; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/IsSame.java)",
+                "tnLine": 25,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void describeTo(Description description) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "RxReturnValueIgnored",
+                "tnDesc": "Returned Rx objects must be checked. Ignoring a returned Rx value means it is never scheduled for execution",
+                "tnFile": "hystrix-contrib/hystrix-rx-netty-metrics-stream/src/main/java/com/netflix/hystrix/contrib/rxnetty/metricsstream/HystrixMetricsStreamHandler.java",
+                "tnLine": 127,
+                "tnColumn": 31,
+                "tnPatch": null,
+                "tnCodeLine": "        response.writeAndFlush((O) byteBuf);",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "appendValueList implements method in Description; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/BaseDescription.java)",
+                "tnLine": 56,
+                "tnColumn": 28,
+                "tnPatch": null,
+                "tnCodeLine": "    public <T> Description appendValueList(String start, String separator, String end, T... values) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "toObservable implements method in HystrixObservable; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixCollapser.java",
+                "tnLine": 365,
+                "tnColumn": 37,
+                "tnPatch": null,
+                "tnCodeLine": "    public Observable<ResponseType> toObservable() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "isResponseThreadPoolRejected implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1881,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean isResponseThreadPoolRejected() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "ClassCanBeStatic",
+                "tnDesc": "Inner class is non-static but does not reference enclosing class",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/Hystrix.java",
+                "tnLine": 200,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "        private class Node<E> {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MutableConstantField",
+                "tnDesc": "Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/conf/HystrixPropertiesManager.java",
+                "tnLine": 278,
+                "tnColumn": 29,
+                "tnPatch": null,
+                "tnCodeLine": "    private static final Map<String, PropSetter<HystrixThreadPoolProperties.Setter, String>> TP_PROP_MAP =",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "getThreadPoolKey implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1309,
+                "tnColumn": 33,
+                "tnPatch": null,
+                "tnCodeLine": "    public HystrixThreadPoolKey getThreadPoolKey() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "BigDecimalLiteralDouble",
+                "tnDesc": "new BigDecimal(double) loses precision in this case. The exact value here is `new BigDecimal(\"123.4500000000000028421709430404007434844970703125\")`.",
+                "tnFile": "hystrix-examples/src/main/java/com/netflix/hystrix/examples/demo/HystrixCommandAsyncDemo.java",
+                "tnLine": 165,
+                "tnColumn": 85,
+                "tnPatch": null,
+                "tnCodeLine": "                    return new CreditCardCommand(pair.b(), pair.a(), new BigDecimal(123.45)).observe();",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MutableConstantField",
+                "tnDesc": "Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/ExecutionType.java",
+                "tnLine": 47,
+                "tnColumn": 29,
+                "tnPatch": null,
+                "tnCodeLine": "    private static final Set<? extends Class> RX_TYPES = ImmutableSet.of(Observable.class, Single.class, Completable.class);",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "newThread implements method in ThreadFactory; expected @Override",
+                "tnFile": "hystrix-contrib/hystrix-metrics-event-stream/src/main/java/com/netflix/hystrix/contrib/metrics/eventstream/HystrixMetricsPoller.java",
+                "tnLine": 520,
+                "tnColumn": 23,
+                "tnPatch": null,
+                "tnCodeLine": "        public Thread newThread(Runnable r) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "getCommandRunStartTimeInNanos implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1963,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public long getCommandRunStartTimeInNanos() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "matches implements method in Matcher; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/IsInstanceOf.java)",
+                "tnLine": 27,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean matches(Object item) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "hasNext implements method in Iterator; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/internal/ArrayIterator.java)",
+                "tnLine": 17,
+                "tnColumn": 0,
+                "tnPatch": null,
+                "tnCodeLine": "\tpublic boolean hasNext() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "toString overrides method in Object; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/StringDescription.java)",
+                "tnLine": 57,
+                "tnColumn": 19,
+                "tnPatch": null,
+                "tnCodeLine": "    public String toString() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "getMetrics implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1322,
+                "tnColumn": 34,
+                "tnPatch": null,
+                "tnCodeLine": "    public HystrixCommandMetrics getMetrics() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "getCommandGroup implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1294,
+                "tnColumn": 35,
+                "tnPatch": null,
+                "tnCodeLine": "    public HystrixCommandGroupKey getCommandGroup() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "append overrides method in BaseDescription; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/StringDescription.java)",
+                "tnLine": 38,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    protected void append(String str) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The field 'orderId' is never read.",
+                "tnFile": "hystrix-examples/src/main/java/com/netflix/hystrix/examples/demo/Order.java",
+                "tnLine": 25,
+                "tnColumn": 23,
+                "tnPatch": null,
+                "tnCodeLine": "    private final int orderId;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "EqualsGetClass",
+                "tnDesc": "Overriding Object#equals in a non-final class by using getClass rather than instanceof breaks substitutability of subclasses.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/ExecutionResult.java",
+                "tnLine": 156,
+                "tnColumn": 24,
+                "tnPatch": null,
+                "tnCodeLine": "        public boolean equals(Object o) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "toString overrides method in Object; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/properties/HystrixPropertiesChainedProperty.java",
+                "tnLine": 123,
+                "tnColumn": 23,
+                "tnPatch": null,
+                "tnCodeLine": "        public String toString() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The field 'r' is never read.",
+                "tnFile": "hystrix-examples/src/main/java/com/netflix/hystrix/examples/demo/HystrixCommandAsyncDemo.java",
+                "tnLine": 121,
+                "tnColumn": 33,
+                "tnPatch": null,
+                "tnCodeLine": "    private final static Random r = new Random();",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "observe implements method in HystrixExecutable; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixCollapser.java",
+                "tnLine": 336,
+                "tnColumn": 37,
+                "tnPatch": null,
+                "tnCodeLine": "    public Observable<ResponseType> observe() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "isResponseFromCache implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1863,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean isResponseFromCache() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "describeTo implements method in SelfDescribing; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/IsNot.java)",
+                "tnLine": 26,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void describeTo(Description description) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "_dont_implement_Matcher___instead_extend_BaseMatcher_ implements method in Matcher; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/BaseMatcher.java)",
+                "tnLine": 15,
+                "tnColumn": 23,
+                "tnPatch": null,
+                "tnCodeLine": "    public final void _dont_implement_Matcher___instead_extend_BaseMatcher_() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "NonAtomicVolatileUpdate",
+                "tnDesc": "This update of a volatile variable is non-atomic",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixCachedObservable.java",
+                "tnLine": 22,
+                "tnColumn": 49,
+                "tnPatch": null,
+                "tnCodeLine": "                        outstandingSubscriptions--;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "getFailedExecutionException implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1804,
+                "tnColumn": 22,
+                "tnPatch": null,
+                "tnCodeLine": "    public Throwable getFailedExecutionException() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The field 'convertToList' is never read.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/metric/consumer/RollingDistributionStream.java",
+                "tnLine": 74,
+                "tnColumn": 108,
+                "tnPatch": null,
+                "tnCodeLine": "    private static final Func1<Observable<CachedValuesHistogram>, Observable<List<CachedValuesHistogram>>> convertToList =",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The field 'EMPTY_ARRAY_OF_TYPES' is never read.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/MetaHolder.java",
+                "tnLine": 354,
+                "tnColumn": 41,
+                "tnPatch": null,
+                "tnCodeLine": "        private static final Class<?>[] EMPTY_ARRAY_OF_TYPES= new Class[0];",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedMethod",
+                "tnDesc": "Private method 'getClassLevelFallback' is never used.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/utils/MethodProvider.java",
+                "tnLine": 82,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    private String getClassLevelFallback(Class<?> enclosingClass) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "toObservable implements method in HystrixObservable; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 364,
+                "tnColumn": 26,
+                "tnPatch": null,
+                "tnCodeLine": "    public Observable<R> toObservable() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "appendDescriptionOf implements method in Description; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/BaseDescription.java)",
+                "tnLine": 20,
+                "tnColumn": 24,
+                "tnPatch": null,
+                "tnCodeLine": "    public Description appendDescriptionOf(SelfDescribing value) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "CatchFail",
+                "tnDesc": "Ignoring exceptions and calling fail() is unnecessary, and makes test output less useful",
+                "tnFile": "hystrix-examples/src/main/java/com/netflix/hystrix/examples/basic/CommandThatFailsSilently.java",
+                "tnLine": 69,
+                "tnColumn": 13,
+                "tnPatch": null,
+                "tnCodeLine": "            try {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "observe implements method in HystrixObservable; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 324,
+                "tnColumn": 26,
+                "tnPatch": null,
+                "tnCodeLine": "    public Observable<R> observe() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "matches implements method in Matcher; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/AnyOf.java)",
+                "tnLine": 23,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean matches(Object o) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The field 'logger' is never read.",
+                "tnFile": "hystrix-serialization/src/main/java/com/netflix/hystrix/serial/SerialHystrixConfiguration.java",
+                "tnLine": 36,
+                "tnColumn": 33,
+                "tnPatch": null,
+                "tnCodeLine": "    private static final Logger logger = LoggerFactory.getLogger(SerialHystrixConfiguration.class);",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "queue implements method in HystrixExecutable; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixCommand.java",
+                "tnLine": 372,
+                "tnColumn": 22,
+                "tnPatch": null,
+                "tnCodeLine": "    public Future<R> queue() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "fn implements method in Striped64; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/LongAdder.java",
+                "tnLine": 64,
+                "tnColumn": 16,
+                "tnPatch": null,
+                "tnCodeLine": "    final long fn(long v, long x) { return v + x; }",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "intValue implements method in Number; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/LongAdder.java",
+                "tnLine": 185,
+                "tnColumn": 16,
+                "tnPatch": null,
+                "tnCodeLine": "    public int intValue() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "EqualsGetClass",
+                "tnDesc": "Overriding Object#equals in a non-final class by using getClass rather than instanceof breaks substitutability of subclasses.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/concurrency/HystrixRequestVariableHolder.java",
+                "tnLine": 91,
+                "tnColumn": 24,
+                "tnPatch": null,
+                "tnCodeLine": "        public boolean equals(Object obj) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "JdkObsolete",
+                "tnDesc": "StringBuffer performs synchronization that is usually unnecessary; prefer StringBuilder.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/metric/HystrixCommandCompletion.java",
+                "tnLine": 94,
+                "tnColumn": 27,
+                "tnPatch": null,
+                "tnCodeLine": "        StringBuffer sb = new StringBuffer();",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "close implements method in Closeable; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/concurrency/HystrixRequestContext.java",
+                "tnLine": 154,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void close() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "ClassCanBeStatic",
+                "tnDesc": "Inner class is non-static but does not reference enclosing class",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/command/AbstractHystrixCommand.java",
+                "tnLine": 182,
+                "tnColumn": 14,
+                "tnPatch": null,
+                "tnCodeLine": "    abstract class Action {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "isExecutedInThread implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1773,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean isExecutedInThread() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "ClassNewInstance",
+                "tnDesc": "Class.newInstance() bypasses exception checking; prefer getDeclaredConstructor().newInstance()",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/HystrixArchaiusHelper.java",
+                "tnLine": 77,
+                "tnColumn": 80,
+                "tnPatch": null,
+                "tnCodeLine": "                return (HystrixDynamicProperties) defaultProperties.newInstance();",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MutableConstantField",
+                "tnDesc": "Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/conf/HystrixPropertiesManager.java",
+                "tnLine": 337,
+                "tnColumn": 29,
+                "tnPatch": null,
+                "tnCodeLine": "    private static final Map<String, PropSetter<HystrixCollapserProperties.Setter, String>> COLLAPSER_PROP_MAP =",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "getCommandKey implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1301,
+                "tnColumn": 30,
+                "tnPatch": null,
+                "tnCodeLine": "    public HystrixCommandKey getCommandKey() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "describeTo implements method in SelfDescribing; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/IsNull.java)",
+                "tnLine": 19,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void describeTo(Description description) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "isExecutionComplete implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1760,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean isExecutionComplete() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "isResponseSemaphoreRejected implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1872,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean isResponseSemaphoreRejected() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "execute implements method in HystrixExecutable; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixCollapser.java",
+                "tnLine": 426,
+                "tnColumn": 25,
+                "tnPatch": null,
+                "tnCodeLine": "    public ResponseType execute() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "append implements method in BaseDescription; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/StringDescription.java)",
+                "tnLine": 46,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    protected void append(char c) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "appendText implements method in Description; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/BaseDescription.java)",
+                "tnLine": 15,
+                "tnColumn": 24,
+                "tnPatch": null,
+                "tnCodeLine": "    public Description appendText(String text) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "EqualsGetClass",
+                "tnDesc": "Overriding Object#equals in a non-final class by using getClass rather than instanceof breaks substitutability of subclasses.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixRequestCache.java",
+                "tnLine": 257,
+                "tnColumn": 24,
+                "tnPatch": null,
+                "tnCodeLine": "        public boolean equals(Object obj) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "fn implements method in Striped64; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/LongMaxUpdater.java",
+                "tnLine": 55,
+                "tnColumn": 16,
+                "tnPatch": null,
+                "tnCodeLine": "    final long fn(long v, long x) { return v > x ? v : x; }",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The parameter 'cookie' is never read.",
+                "tnFile": "hystrix-examples/src/main/java/com/netflix/hystrix/examples/demo/GetUserAccountCommand.java",
+                "tnLine": 110,
+                "tnColumn": 58,
+                "tnPatch": null,
+                "tnCodeLine": "        private static UserCookie parseCookie(HttpCookie cookie) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "EqualsGetClass",
+                "tnDesc": "Overriding Object#equals in a non-final class by using getClass rather than instanceof breaks substitutability of subclasses.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/metric/HystrixRequestEvents.java",
+                "tnLine": 153,
+                "tnColumn": 24,
+                "tnPatch": null,
+                "tnCodeLine": "        public boolean equals(Object o) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "OperatorPrecedence",
+                "tnDesc": "Use grouping parenthesis to make the operator precedence explicit",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/LongMaxUpdater.java",
+                "tnLine": 73,
+                "tnColumn": 28,
+                "tnPatch": null,
+                "tnCodeLine": "            (b = base) < x && !casBase(b, x)) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "queue implements method in HystrixExecutable; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixCollapser.java",
+                "tnLine": 456,
+                "tnColumn": 33,
+                "tnPatch": null,
+                "tnCodeLine": "    public Future<ResponseType> queue() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "matches implements method in Matcher; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/IsSame.java)",
+                "tnLine": 21,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean matches(Object arg) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "isSuccessfulExecution implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1782,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean isSuccessfulExecution() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "floatValue implements method in Number; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/LongAdder.java",
+                "tnLine": 193,
+                "tnColumn": 18,
+                "tnPatch": null,
+                "tnCodeLine": "    public float floatValue() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "getPublicCacheKey implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1722,
+                "tnColumn": 19,
+                "tnPatch": null,
+                "tnCodeLine": "    public String getPublicCacheKey() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "shutdown implements method in HystrixRequestVariableLifecycle; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixRequestLog.java",
+                "tnLine": 59,
+                "tnColumn": 21,
+                "tnPatch": null,
+                "tnCodeLine": "        public void shutdown(HystrixRequestLog value) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "intValue implements method in Number; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/LongMaxUpdater.java",
+                "tnLine": 169,
+                "tnColumn": 16,
+                "tnPatch": null,
+                "tnCodeLine": "    public int intValue() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The field 'id' is never read.",
+                "tnFile": "hystrix-examples/src/main/java/com/netflix/hystrix/examples/basic/CommandWithFallbackViaNetwork.java",
+                "tnLine": 62,
+                "tnColumn": 27,
+                "tnPatch": null,
+                "tnCodeLine": "        private final int id;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "isResponseFromFallback implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1834,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean isResponseFromFallback() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "toObservable implements method in HystrixObservable; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixObservableCollapser.java",
+                "tnLine": 425,
+                "tnColumn": 37,
+                "tnPatch": null,
+                "tnCodeLine": "    public Observable<ResponseType> toObservable() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "StringSplitter",
+                "tnDesc": "String.split(String) has surprising behavior",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/utils/MethodProvider.java",
+                "tnLine": 264,
+                "tnColumn": 35,
+                "tnPatch": null,
+                "tnCodeLine": "        String params = desc.split(\"\\\\)\")[0].replace(\"(\", \"\");",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "NonAtomicVolatileUpdate",
+                "tnDesc": "This update of a volatile variable is non-atomic",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/collapser/CollapsedRequestSubject.java",
+                "tnLine": 70,
+                "tnColumn": 49,
+                "tnPatch": null,
+                "tnCodeLine": "                        outstandingSubscriptions--;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "shutdown implements method in HystrixRequestVariableLifecycle; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/concurrency/HystrixRequestVariableDefault.java",
+                "tnLine": 174,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void shutdown(T value) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "EqualsGetClass",
+                "tnDesc": "Overriding Object#equals in a non-final class by using getClass rather than instanceof breaks substitutability of subclasses.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/metric/HystrixRequestEvents.java",
+                "tnLine": 100,
+                "tnColumn": 24,
+                "tnPatch": null,
+                "tnCodeLine": "        public boolean equals(Object o) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "matches implements method in Matcher; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/DescribedAs.java)",
+                "tnLine": 28,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean matches(Object o) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "isResponseShortCircuited implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1854,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean isResponseShortCircuited() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "doFilter implements method in Filter; expected @Override",
+                "tnFile": "hystrix-contrib/hystrix-request-servlet/src/main/java/com/netflix/hystrix/contrib/requestservlet/HystrixRequestLogViaResponseHeaderServletFilter.java",
+                "tnLine": 61,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "appendList implements method in Description; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/BaseDescription.java)",
+                "tnLine": 68,
+                "tnColumn": 24,
+                "tnPatch": null,
+                "tnCodeLine": "    public Description appendList(String start, String separator, String end, Iterable<? extends SelfDescribing> values) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "getExecutionEvents implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1901,
+                "tnColumn": 35,
+                "tnPatch": null,
+                "tnCodeLine": "    public List<HystrixEventType> getExecutionEvents() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "initialValue overrides method in ThreadLocal; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/Striped64.java",
+                "tnLine": 150,
+                "tnColumn": 25,
+                "tnPatch": null,
+                "tnCodeLine": "        public HashCode initialValue() { return new HashCode(); }",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "matches implements method in Matcher; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/IsAnything.java)",
+                "tnLine": 26,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean matches(Object o) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "describeTo implements method in SelfDescribing; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/AnyOf.java)",
+                "tnLine": 32,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void describeTo(Description description) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "NonAtomicVolatileUpdate",
+                "tnDesc": "This update of a volatile variable is non-atomic",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/collapser/CollapsedRequestSubject.java",
+                "tnLine": 64,
+                "tnColumn": 49,
+                "tnPatch": null,
+                "tnCodeLine": "                        outstandingSubscriptions++;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedMethod",
+                "tnDesc": "Private method 'getDefaultFallback' is never used.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/utils/MethodProvider.java",
+                "tnLine": 78,
+                "tnColumn": 18,
+                "tnPatch": null,
+                "tnCodeLine": "    private void getDefaultFallback(){",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "observe implements method in HystrixEventStream; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/metric/HystrixCollapserEventStream.java",
+                "tnLine": 72,
+                "tnColumn": 46,
+                "tnPatch": null,
+                "tnCodeLine": "    public Observable<HystrixCollapserEvent> observe() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "doubleValue implements method in Number; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/LongAdder.java",
+                "tnLine": 201,
+                "tnColumn": 19,
+                "tnPatch": null,
+                "tnCodeLine": "    public double doubleValue() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "EqualsGetClass",
+                "tnDesc": "Overriding Object#equals in a non-final class by using getClass rather than instanceof breaks substitutability of subclasses.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/HystrixRequestCache.java",
+                "tnLine": 198,
+                "tnColumn": 24,
+                "tnPatch": null,
+                "tnCodeLine": "        public boolean equals(Object obj) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "longValue implements method in Number; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/LongMaxUpdater.java",
+                "tnLine": 161,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public long longValue() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "ClassCanBeStatic",
+                "tnDesc": "Inner class is non-static but does not reference enclosing class",
+                "tnFile": "hystrix-examples/src/main/java/com/netflix/hystrix/examples/demo/HystrixCommandAsyncDemo.java",
+                "tnLine": 123,
+                "tnColumn": 13,
+                "tnPatch": null,
+                "tnCodeLine": "    private class Pair<A, B> {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "remove implements method in Iterator; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/internal/ArrayIterator.java)",
+                "tnLine": 25,
+                "tnColumn": 0,
+                "tnPatch": null,
+                "tnCodeLine": "\tpublic void remove() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "getExecutionTimeInMilliseconds implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1953,
+                "tnColumn": 16,
+                "tnPatch": null,
+                "tnCodeLine": "    public int getExecutionTimeInMilliseconds() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "EqualsGetClass",
+                "tnDesc": "Overriding Object#equals in a non-final class by using getClass rather than instanceof breaks substitutability of subclasses.",
+                "tnFile": "hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/cache/DefaultHystrixGeneratedCacheKey.java",
+                "tnLine": 49,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean equals(Object o) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "finalize overrides method in Object; expected @Override",
+                "tnFile": "hystrix-contrib/hystrix-metrics-event-stream/src/main/java/com/netflix/hystrix/contrib/metrics/eventstream/HystrixMetricsPoller.java",
+                "tnLine": 142,
+                "tnColumn": 24,
+                "tnPatch": null,
+                "tnCodeLine": "        protected void finalize() throws Throwable {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "isResponseTimedOut implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1844,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean isResponseTimedOut() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "matches implements method in Matcher; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/core/IsEqual.java)",
+                "tnLine": 24,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean matches(Object arg) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "ClassNewInstance",
+                "tnDesc": "Class.newInstance() bypasses exception checking; prefer getDeclaredConstructor().newInstance()",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/HystrixPlugins.java",
+                "tnLine": 350,
+                "tnColumn": 43,
+                "tnPatch": null,
+                "tnCodeLine": "                return (T) cls.newInstance();",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "isFailedExecution implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1791,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean isFailedExecution() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "next implements method in Iterator; expected @Override",
+                "tnFile": "/root/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar(/org/hamcrest/internal/ArrayIterator.java)",
+                "tnLine": 21,
+                "tnColumn": 0,
+                "tnPatch": null,
+                "tnCodeLine": "\tpublic Object next() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "doFilter implements method in Filter; expected @Override",
+                "tnFile": "hystrix-contrib/hystrix-request-servlet/src/main/java/com/netflix/hystrix/contrib/requestservlet/HystrixRequestLogViaLoggerServletFilter.java",
+                "tnLine": 67,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "longValue implements method in Number; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/util/LongAdder.java",
+                "tnLine": 177,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "    public long longValue() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "initialValue implements method in HystrixRequestVariableLifecycle; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/strategy/concurrency/HystrixRequestVariableDefault.java",
+                "tnLine": 121,
+                "tnColumn": 14,
+                "tnPatch": null,
+                "tnCodeLine": "    public T initialValue() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "getProperties implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1331,
+                "tnColumn": 37,
+                "tnPatch": null,
+                "tnCodeLine": "    public HystrixCommandProperties getProperties() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "TypeParameterShadowing",
+                "tnDesc": "Found aliased type parameters: E declared in ConcurrentStack",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/Hystrix.java",
+                "tnLine": 200,
+                "tnColumn": 17,
+                "tnPatch": null,
+                "tnCodeLine": "        private class Node<E> {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The field 'commandKey' is never read.",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/config/HystrixCommandConfiguration.java",
+                "tnLine": 26,
+                "tnColumn": 37,
+                "tnPatch": null,
+                "tnCodeLine": "    private final HystrixCommandKey commandKey;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MissingOverride",
+                "tnDesc": "isCircuitBreakerOpen implements method in HystrixInvokableInfo; expected @Override",
+                "tnFile": "hystrix-core/src/main/java/com/netflix/hystrix/AbstractCommand.java",
+                "tnLine": 1751,
+                "tnColumn": 20,
+                "tnPatch": null,
+                "tnCodeLine": "    public boolean isCircuitBreakerOpen() {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The field 'logger' is never read.",
+                "tnFile": "hystrix-serialization/src/main/java/com/netflix/hystrix/serial/SerialHystrixUtilization.java",
+                "tnLine": 34,
+                "tnColumn": 33,
+                "tnPatch": null,
+                "tnCodeLine": "    private final static Logger logger = LoggerFactory.getLogger(SerialHystrixUtilization.class);",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              }
+            ]
+          ]
+        }
+      ]
+    ]
+  }
+}

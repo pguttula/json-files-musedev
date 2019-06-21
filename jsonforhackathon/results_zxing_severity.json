@@ -1,0 +1,315 @@
+{
+  "tag": "AnalysisSuccess",
+  "contents": {
+    "requestedTools": null,
+    "toolResults": [
+      [
+        {
+          "tag": "Infer"
+        },
+        {
+          "tag": "ToolSuccess",
+          "contents": [
+            [
+              {
+                "tnType": "NULL_DEREFERENCE",
+                "tnDesc": "object `url` last assigned on line 68 could be null and is dereferenced by call to `getVCard(...)` at line 77.",
+                "tnFile": "zxing.appspot.com/src/main/java/com/google/zxing/web/generator/client/ContactInfoGenerator.java",
+                "tnLine": 77,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.google.zxing.web.generator.client.ContactInfoGenerator.getText():java.lang.String",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              },
+              {
+                "tnType": "RESOURCE_LEAK",
+                "tnDesc": "resource of type `java.net.HttpURLConnection` acquired by call to `openConnection()` at line 204 is not released after line 207.",
+                "tnFile": "javase/src/main/java/com/google/zxing/client/j2se/StringsResourceTranslator.java",
+                "tnLine": 207,
+                "tnColumn": -1,
+                "tnPatch": null,
+                "tnCodeLine": null,
+                "tnProcedure": "com.google.zxing.client.j2se.StringsResourceTranslator.fetch(java.net.URI):java.lang.CharSequence",
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "Infer"
+                }
+              }
+            ],
+            null,
+            {
+              "analysisLOC": null,
+              "analysisBuildSys": "Maven []",
+              "analysisLang": null
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "tag": "ErrorProne_JDK8"
+        },
+        {
+          "tag": "ToolSuccess",
+          "contents": [
+            [
+              {
+                "tnType": "ShortCircuitBoolean",
+                "tnDesc": "Prefer the short-circuiting boolean operators && and || to & and |.",
+                "tnFile": "zxingorg/src/main/java/com/google/zxing/web/DoSFilter.java",
+                "tnLine": 84,
+                "tnColumn": 70,
+                "tnPatch": null,
+                "tnCodeLine": "      (remoteHost != null && sourceAddrTracker.isBanned(remoteHost)) |",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "JdkObsolete",
+                "tnDesc": "It is very rare for LinkedList to out-perform ArrayList or ArrayDeque. Avoid it unless you're willing to invest a lot of time into benchmarking. Caveat: LinkedList supports null elements, but ArrayDeque does not.",
+                "tnFile": "core/src/main/java/com/google/zxing/aztec/encoder/State.java",
+                "tnLine": 154,
+                "tnColumn": 28,
+                "tnPatch": null,
+                "tnCodeLine": "    Deque<Token> symbols = new LinkedList<>();",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "JdkObsolete",
+                "tnDesc": "It is very rare for LinkedList to out-perform ArrayList or ArrayDeque. Avoid it unless you're willing to invest a lot of time into benchmarking. Caveat: LinkedList supports null elements, but ArrayDeque does not.",
+                "tnFile": "core/src/main/java/com/google/zxing/aztec/encoder/HighLevelEncoder.java",
+                "tnLine": 205,
+                "tnColumn": 32,
+                "tnPatch": null,
+                "tnCodeLine": "    Collection<State> result = new LinkedList<>();",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "ImmutableEnumChecker",
+                "tnDesc": "enums should be immutable: 'CharacterSetECI' has field 'values' of type 'int[]', arrays are mutable",
+                "tnFile": "core/src/main/java/com/google/zxing/common/CharacterSetECI.java",
+                "tnLine": 75,
+                "tnColumn": 23,
+                "tnPatch": null,
+                "tnCodeLine": "  private final int[] values;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "JdkObsolete",
+                "tnDesc": "It is very rare for LinkedList to out-perform ArrayList or ArrayDeque. Avoid it unless you're willing to invest a lot of time into benchmarking. Caveat: LinkedList supports null elements, but ArrayDeque does not.",
+                "tnFile": "javase/src/main/java/com/google/zxing/client/j2se/HtmlAssetTranslator.java",
+                "tnLine": 164,
+                "tnColumn": 25,
+                "tnPatch": null,
+                "tnCodeLine": "    Queue<Node> nodes = new LinkedList<>();",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "UnusedVariable",
+                "tnDesc": "The parameter 'ch' is never read.",
+                "tnFile": "core/src/main/java/com/google/zxing/datamatrix/encoder/HighLevelEncoder.java",
+                "tnLine": 415,
+                "tnColumn": 45,
+                "tnPatch": null,
+                "tnCodeLine": "  private static boolean isSpecialB256(char ch) {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "JdkObsolete",
+                "tnDesc": "It is very rare for LinkedList to out-perform ArrayList or ArrayDeque. Avoid it unless you're willing to invest a lot of time into benchmarking. Caveat: LinkedList supports null elements, but ArrayDeque does not.",
+                "tnFile": "core/src/main/java/com/google/zxing/aztec/encoder/HighLevelEncoder.java",
+                "tnLine": 254,
+                "tnColumn": 32,
+                "tnPatch": null,
+                "tnCodeLine": "    Collection<State> result = new LinkedList<>();",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "JdkObsolete",
+                "tnDesc": "It is very rare for LinkedList to out-perform ArrayList or ArrayDeque. Avoid it unless you're willing to invest a lot of time into benchmarking. Caveat: LinkedList supports null elements, but ArrayDeque does not.",
+                "tnFile": "core/src/main/java/com/google/zxing/aztec/encoder/HighLevelEncoder.java",
+                "tnLine": 286,
+                "tnColumn": 32,
+                "tnPatch": null,
+                "tnCodeLine": "    Collection<State> result = new LinkedList<>();",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MutableConstantField",
+                "tnDesc": "Constant field declarations should use the immutable type (such as ImmutableList) instead of the general collection interface type (such as List)",
+                "tnFile": "zxingorg/src/main/java/com/google/zxing/web/ChartServlet.java",
+                "tnLine": 57,
+                "tnColumn": 34,
+                "tnPatch": null,
+                "tnCodeLine": "  private static final Collection<Charset> SUPPORTED_OUTPUT_ENCODINGS = ImmutableSet.<Charset>builder()",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "MixedMutabilityReturnType",
+                "tnDesc": "This method returns both mutable and immutable collections or maps from different paths. This may be confusing for users of the method.",
+                "tnFile": "javase/src/main/java/com/google/zxing/client/j2se/StringsResourceTranslator.java",
+                "tnLine": 217,
+                "tnColumn": 37,
+                "tnPatch": null,
+                "tnCodeLine": "  private static Map<String,String> readLines(Path file) throws IOException {",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "StringSplitter",
+                "tnDesc": "String.split(String) has surprising behavior",
+                "tnFile": "javase/src/main/java/com/google/zxing/client/j2se/DecodeWorker.java",
+                "tnLine": 100,
+                "tnColumn": 43,
+                "tnPatch": null,
+                "tnCodeLine": "        String[] pathElements = path.split(\"/\");",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "ImmutableEnumChecker",
+                "tnDesc": "enums should be immutable: 'Mode' has field 'characterCountBitsForVersions' of type 'int[]', arrays are mutable",
+                "tnFile": "core/src/main/java/com/google/zxing/qrcode/decoder/Mode.java",
+                "tnLine": 39,
+                "tnColumn": 23,
+                "tnPatch": null,
+                "tnCodeLine": "  private final int[] characterCountBitsForVersions;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "OperatorPrecedence",
+                "tnDesc": "Use grouping parenthesis to make the operator precedence explicit",
+                "tnFile": "core/src/main/java/com/google/zxing/pdf417/encoder/PDF417.java",
+                "tnLine": 577,
+                "tnColumn": 24,
+                "tnPatch": null,
+                "tnCodeLine": "    int map = 1 << len - 1;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "OperatorPrecedence",
+                "tnDesc": "Use grouping parenthesis to make the operator precedence explicit",
+                "tnFile": "core/src/main/java/com/google/zxing/aztec/encoder/Encoder.java",
+                "tnLine": 294,
+                "tnColumn": 73,
+                "tnPatch": null,
+                "tnCodeLine": "        value |= stuffedBits.get(i * wordSize + j) ? (1 << wordSize - j - 1) : 0;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "OperatorPrecedence",
+                "tnDesc": "Use grouping parenthesis to make the operator precedence explicit",
+                "tnFile": "core/src/main/java/com/google/zxing/pdf417/decoder/PDF417ScanningDecoder.java",
+                "tnLine": 550,
+                "tnColumn": 26,
+                "tnPatch": null,
+                "tnCodeLine": "    if (erasures != null &&",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              },
+              {
+                "tnType": "ImmutableEnumChecker",
+                "tnDesc": "enums should be immutable: 'CharacterSetECI' has field 'otherEncodingNames' of type 'java.lang.String[]', arrays are mutable",
+                "tnFile": "core/src/main/java/com/google/zxing/common/CharacterSetECI.java",
+                "tnLine": 76,
+                "tnColumn": 26,
+                "tnPatch": null,
+                "tnCodeLine": "  private final String[] otherEncodingNames;",
+                "tnProcedure": null,
+                "tnPhase": "PhaseUnknown",
+                "severity":,
+                "tnTool": {
+                  "tag": "ErrorProne_JDK8"
+                }
+              }
+            ],
+            null,
+            {
+              "analysisLOC": null,
+              "analysisBuildSys": "Maven []",
+              "analysisLang": null
+            }
+          ]
+        }
+      ]
+    ]
+  }
+}
+  
