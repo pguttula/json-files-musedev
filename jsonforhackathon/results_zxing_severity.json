@@ -1,6 +1,4 @@
 {
-  "tag": "AnalysisSuccess",
-  "contents": {
     "requestedTools": null,
     "toolResults": [
       [
@@ -43,11 +41,6 @@
               }
             ],
             null,
-            {
-              "analysisLOC": null,
-              "analysisBuildSys": "Maven []",
-              "analysisLang": null
-            }
           ]
         }
       ],
@@ -301,15 +294,9 @@
               }
             ],
             null,
-            {
-              "analysisLOC": null,
-              "analysisBuildSys": "Maven []",
-              "analysisLang": null
-            }
           ]
         }
       ]
     ]
   }
-}
   
